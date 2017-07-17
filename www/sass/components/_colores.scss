@@ -1,0 +1,19 @@
+// Colores Generales
+/*
+PARA USARLOS SOLO DA ESTILOS NORMALES Y LLAMA LA VARIBLE DE
+ESTA FORMA
+
+background: var(--azul);
+color: var(--azul);
+*/
+:root {
+  --azul: #0cada5;
+  --Mdark-verde: #195656;
+  --dark-verde: #1c3e3e;
+  --naranja: #f09305;
+  --blanco-grisacio: #f1f4f4;
+}
+
+body {
+  background: var(--blanco-grisacio);
+}
