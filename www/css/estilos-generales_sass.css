@@ -80,7 +80,8 @@ body {
   border: none !important; }
 
 .btn-facebook {
-  background: #484cad !important; }
+  background: #484cad !important;
+  font-weight: bold; }
 
 .btn-google {
   background: #f60c0c !important; }
