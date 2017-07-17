@@ -18,9 +18,39 @@
     <title>APPLAUSO</title>
 
   </head>
-  <body>
-
-
+  <body style="overflow: none !important;" class="body-login">
+    <div class="row">
+      <div class="caja-login container col-xs-8 col-xs-offset-2">
+        <div class="logo">
+          <img class="logo_img" src="img/logo.png" alt="">
+        </div>
+        <form class="form form-register" id="contenedor" method="POST" action="">
+          <div class="content">
+            <div class="form-group label-floating">
+              <label class="control-label" for="usuario">Usuario</label>
+              <input id="usuario" name="usuario" type="text" class="form-control" required autocomplete="off">
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label" for="password">Contraseña</label>
+              <input id="password" name="escritor" type="password" class="form-control" required autocomplete="off">
+            </div>
+          </div>
+          <div class="footer text-center">
+            <a href="#" class="olvidaste_ctñ">¿Olvidaste tu contraseña?</a>
+            <br><br>
+            <button class="btn btn-primary btn-login" type="button" name="button">Login</button>
+          </div>
+          <div class="social">
+            <a href="#">
+              <button class="btn btn-primary btn-facebook" type="button" name="button">facebook</button>
+            </a>
+            <a href="#">
+              <button class="btn btn-primary btn-google" type="button" name="button">Google</button>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
     <!--JAVASCRIPTs-->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
