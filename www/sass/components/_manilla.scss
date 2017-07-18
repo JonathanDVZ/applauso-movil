@@ -1,0 +1,35 @@
+.body-degradado {
+  height: 100vh;
+  overflow-x: hidden;
+  background:  linear-gradient(
+    rgba(#0cada5,.7),
+    rgba(#f09305,.2)
+  );
+}
+
+.caja {
+  padding: 8em 0;
+}
+
+.caja-manilla {
+  margin-top: 2em;
+  &_titulo_one,
+  &_titulo_dos {
+    color: var(--blanco-grisacio);
+    margin: 0;
+  }
+
+  &_titulo_dos {
+    margin-top: -0.2em;
+    text-transform: uppercase;
+  }
+}
+
+.btn-uno,
+.btn-dos {
+  margin-top: 2em;
+}
+
+.btn-dos {
+  margin-top: -0.03em;
+}

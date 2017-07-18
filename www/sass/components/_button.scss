@@ -4,11 +4,37 @@
   font-size: 1.4em;
   text-transform: capitalize;
   border-radius: 12px;
-  border: 2px solid var(--blanco-grisacio);
+  border: 2px solid #fff;
+
+  &:hover {
+    border: 2px solid #fff;
+  }
 }
 
-.btn-login:hover {
-  border: 2px solid var(--blanco-grisacio);
+.btn-manilla,
+.btn-qr,
+.btn-rg,
+.btn-et {
+  width: 100%;
+  line-height: 0.9em;
+  font-size: 1.4em;
+  text-transform: none;
+  border-radius: 12px;
+  border: 2px solid #fff;
+
+  &:hover {
+    border: 2px solid #fff;
+  }
+}
+
+.btn-rg,
+.btn-et {
+  line-height: 1em;
+  font-size: 1.8em;
+}
+
+.btn-rg {
+  background: none !important;
 }
 
 .btn-facebook,
