@@ -6,8 +6,10 @@
   border-radius: 12px;
   border: 2px solid #fff;
 
-  &:hover {
-    border: 2px solid #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid #fff !important;
   }
 }
 
@@ -22,8 +24,10 @@
   border-radius: 12px;
   border: 2px solid #fff;
 
-  &:hover {
-    border: 2px solid #fff;
+  &:hover,
+  &:focus,
+  &:active {
+    border: 2px solid #fff !important;
   }
 }
 
@@ -41,17 +45,44 @@
 .btn-google {
   width: 100%;
   text-transform: none;
-  line-height: 1em;
-  font-size: 1.4em;
-  border-radius: 12px;
+  font-size: 1.6em;
+  border-radius: 13px;
+  color: #fff !important;
   border: none !important;
 }
 
 .btn-facebook {
   background: rgb(72, 76, 173) !important;
+  font-size: 2em;
+  line-height: 0.8em;
   font-weight: bold;
 }
 
 .btn-google {
   background: rgb(246, 12, 12) !important;
+  line-height: 1em;
+  font-weight: 400;
+}
+
+.btn-facebook-small,
+.btn-google-small {
+  width: 85%;
+  text-transform: none;
+  font-size: 1.4em;
+  border-radius: 13px;
+  color: #fff !important;
+  border: none !important;
+}
+
+.btn-facebook-small {
+  background: rgb(72, 76, 173) !important;
+  font-size: 1.8em;
+  line-height: 0.6em;
+  font-weight: bold;
+}
+
+.btn-google-small {
+  background: rgb(246, 12, 12) !important;
+  line-height: 0.8em;
+  font-weight: 400;
 }
