@@ -3,7 +3,22 @@
   background: url(../img/c.jpg);
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
+  height: 100vh;
   position: relative;
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 1px !important;
+  }
+
+  @media screen and (max-width: 769px) {
+    overflow-y: hidden;
+  }
+
+  @media screen and (max-width: 321px) {
+    overflow-y: auto;
+    background-size: 100vw 100%;
+  }
 
   &:before {
     content: "";
@@ -14,6 +29,10 @@
     top: 0;
     left: 0;
     margin: auto;
+
+    @media screen and (max-width: 321px) {
+      height: 143vh;
+    }
   }
 }
 
