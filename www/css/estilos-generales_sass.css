@@ -10,7 +10,25 @@ body {
   height: 150px; }
   .logo_sinLetras img {
     width: 100%;
-    height: 150px; }
+    height: 100%; }
+  @media screen and (max-width: 321px) {
+    .logo_sinLetras {
+      width: 120px;
+      height: 110px; } }
+
+.logo-manilla {
+  position: relative;
+  width: 140px;
+  height: 160px; }
+  .logo-manilla img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 321px) {
+    .logo-manilla {
+      width: 80px;
+      height: 100px; } }
 
 /*
 PARA USARLOS SOLO DA ESTILOS NORMALES Y LLAMA LA VARIBLE DE
@@ -32,8 +50,7 @@ body {
   background: var(--blanco-grisacio); }
 
 .body-login {
-  background: url(../img/c.jpg);
-  background-repeat: no-repeat;
+  background: url(../img/bg2.png);
   background-size: 100vw 100vh;
   height: 100vh;
   position: relative;
@@ -49,7 +66,6 @@ body {
       background-size: 100vw 100%; } }
   .body-login:before {
     content: "";
-    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -98,34 +114,26 @@ body {
   .btn-login:hover, .btn-login:focus, .btn-login:active {
     border: 2px solid #fff !important; }
 
-.btn-manilla,
-.btn-qr,
-.btn-rg,
-.btn-et {
+.btn-transparente,
+.btn-azul {
   width: 100%;
   line-height: 0.9em;
   font-size: 1.4em;
   text-transform: none;
   border-radius: 12px;
   border: 2px solid #fff; }
-  .btn-manilla:hover, .btn-manilla:focus, .btn-manilla:active,
-  .btn-qr:hover,
-  .btn-qr:focus,
-  .btn-qr:active,
-  .btn-rg:hover,
-  .btn-rg:focus,
-  .btn-rg:active,
-  .btn-et:hover,
-  .btn-et:focus,
-  .btn-et:active {
+  .btn-transparente:hover, .btn-transparente:focus, .btn-transparente:active,
+  .btn-azul:hover,
+  .btn-azul:focus,
+  .btn-azul:active {
     border: 2px solid #fff !important; }
 
-.btn-rg,
-.btn-et {
+.btn-transparente,
+.btn-azul {
   line-height: 1em;
   font-size: 1.8em; }
 
-.btn-rg {
+.btn-transparente {
   background: none !important; }
 
 .btn-facebook,
@@ -177,29 +185,75 @@ input[type="password"] {
   font-size: 1.6em !important;
   color: #fff !important; }
 
-.body-degradado {
-  height: 100vh;
+.body-bg-transparente {
   overflow-x: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 173, 165, 0.7)), to(rgba(240, 147, 5, 0.2)));
-  background: -webkit-linear-gradient(rgba(12, 173, 165, 0.7), rgba(240, 147, 5, 0.2));
-  background: -o-linear-gradient(rgba(12, 173, 165, 0.7), rgba(240, 147, 5, 0.2));
-  background: linear-gradient(rgba(12, 173, 165, 0.7), rgba(240, 147, 5, 0.2)); }
+  overflow-y: hidden;
+  position: relative;
+  height: 100vh; }
+  .body-bg-transparente:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg-transparente.png);
+    background-size: 100vw 100vh; }
 
 .caja {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 8em 0; }
 
 .caja-manilla {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 2em; }
-  .caja-manilla_titulo_one, .caja-manilla_titulo_dos {
+  .caja-manilla_titulo_uno, .caja-manilla_titulo_dos {
     color: var(--blanco-grisacio);
     margin: 0; }
+  .caja-manilla_titulo_uno {
+    font-size: 4em; }
   .caja-manilla_titulo_dos {
     margin-top: -0.2em;
     text-transform: uppercase; }
+  @media screen and (max-width: 321px) {
+    .caja-manilla_titulo_uno {
+      margin-top: -1em;
+      font-size: 2em; }
+    .caja-manilla_titulo_dos {
+      font-size: 2.5em; } }
 
 .btn-uno,
 .btn-dos {
   margin-top: 2em; }
+  @media screen and (max-width: 321px) {
+    .btn-uno,
+    .btn-dos {
+      font-size: 1em !important; } }
 
 .btn-dos {
   margin-top: -0.03em; }
@@ -244,8 +298,7 @@ input[type="password"] {
 
 .body-bg {
   background: url(../img/bg.png);
-  background-size: 120vw 120vh;
-  background-position: -1.5em -1.5em; }
+  background-size: 102vw 100vh; }
 
 .caja-center {
   display: -webkit-box;
@@ -261,6 +314,14 @@ input[type="password"] {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+@media screen and (max-width: 321px) {
+  .body-bg,
+  .caja-center {
+    overflow: hidden; }
+  .btn-transparente,
+  .btn-azul {
+    font-size: 1.2em; } }
 
 .body-opc {
   overflow-x: hidden;

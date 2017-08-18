@@ -12,7 +12,30 @@ body {
   height: 150px;
   img {
     width: 100%;
-    height: 150px;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 321px) {
+    width: 120px;
+    height: 110px;
+  }
+}
+
+.logo-manilla {
+  position: relative;
+  width: 140px;
+  height: 160px;
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 321px) {
+    width: 80px;
+    height: 100px;
   }
 }
 
