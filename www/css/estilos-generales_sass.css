@@ -16,6 +16,41 @@ body {
       width: 120px;
       height: 110px; } }
 
+.logo_sinLetras-login {
+  width: 140px;
+  height: 130px; }
+  .logo_sinLetras-login img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 321px) {
+    .logo_sinLetras-login {
+      width: 100px;
+      height: 90px; } }
+
+.logo-conLetras {
+  width: 140px;
+  height: 160px; }
+  .logo-conLetras img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 321px) {
+    .logo-conLetras {
+      margin-top: -2em;
+      width: 100px;
+      height: 120px; } }
+
+.logo-conLetras_register {
+  width: 120px;
+  height: 140px; }
+  .logo-conLetras_register img {
+    width: 100%;
+    height: 100%; }
+  @media screen and (max-width: 321px) {
+    .logo-conLetras_register {
+      margin-top: -2em;
+      width: 80px;
+      height: 100px; } }
+
 .logo-manilla {
   position: relative;
   width: 140px;
@@ -39,7 +74,7 @@ color: var(--azul);
 */
 :root {
   --azul: #0cada5;
-  --claro-verde: #59cba4;
+  --claro-verde: #32ac87;
   --Mdark-verde: #195656;
   --dark-verde: #1c3e3e;
   --pastel: #cbcd7f;
@@ -56,7 +91,7 @@ body {
   position: relative;
   overflow-y: auto; }
   .body-login::-webkit-scrollbar {
-    width: 1px !important; }
+    width: 0 !important; }
   @media screen and (max-width: 769px) {
     .body-login {
       overflow-y: hidden; } }
@@ -64,19 +99,21 @@ body {
     .body-login {
       overflow-y: auto;
       background-size: 100vw 100%; } }
-  .body-login:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    margin: auto; }
-    @media screen and (max-width: 321px) {
-      .body-login:before {
-        height: 143vh; } }
 
 .caja-login {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 5em 0; }
 
 .logo {
@@ -261,40 +298,50 @@ input[type="password"] {
 .body-degradado-img {
   height: 100vh;
   overflow-x: hidden;
-  background: url(../img/a.jpg);
+  background: url(../img/bg3.png);
   background-size: 100vw 100%;
   position: relative; }
-  .body-degradado-img:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.5)), to(rgba(203, 205, 127, 0.4)));
-    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
-    background: -o-linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
-    background: linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
-    width: 100%;
-    height: 100vh; }
+  @media screen and (max-width: 321px) {
+    .body-degradado-img {
+      overflow: hidden; } }
 
 .caja {
   padding: 8em 0; }
+  @media screen and (max-width: 321px) {
+    .caja {
+      overflow: hidden; } }
 
 .caja-manilla {
   margin-top: 2em; }
+  @media screen and (max-width: 321px) {
+    .caja-manilla {
+      overflow: hidden; } }
 
 .label-codigo {
   color: #fff;
   font-size: 2em;
-  margin: 0; }
+  margin: 0;
+  margin-left: -2.5em;
+  font-weight: bold; }
+  @media screen and (max-width: 321px) {
+    .label-codigo {
+      font-size: 1.5em; } }
 
 .input-codigo {
   width: 100%;
+  line-height: 0.5em;
   padding: 0.8em;
   background: none;
   color: #fff;
-  border: 2px solid #fff;
-  border-radius: 12px; }
+  border: 3px solid #fff;
+  border-radius: 20px; }
+  @media screen and (max-width: 321px) {
+    .input-codigo {
+      height: 50px; } }
+
+@media screen and (max-width: 321px) {
+  .btn-qr {
+    font-size: 1.2em !important; } }
 
 .body-bg {
   background: url(../img/bg.png);
@@ -327,143 +374,45 @@ input[type="password"] {
   overflow-x: hidden;
   overflow-y: auto; }
 
-.caja-opc_cinta {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: -1em;
-  width: 100vw;
-  height: 70px;
-  background: var(--dark-verde);
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
-
-.logo_cinta {
-  margin-top: 0.8em;
-  width: 250px;
-  height: 55px;
-  position: relative; }
-  .logo_cinta img {
-    position: absolute;
-    top: 0;
-    left: 0;
+.caja-opc_comunidad {
+  padding: 0;
+  margin: 0; }
+  .caja-opc_comunidad img {
     width: 100%;
-    height: 55px; }
+    height: 100%; }
 
-.caja-opc_cinta_titulo {
-  color: var(--naranja);
-  font-size: 3em;
-  margin: 0;
-  padding-left: 0.1em;
-  margin-top: 0.1em; }
-  .caja-opc_cinta_titulo .color-azul {
-    color: var(--azul); }
-
-.caja-opc_comunidad,
 .caja-opc_evento,
 .caja-opc_comida,
 .caja-opc_aliados,
 .caja-opc_misaplausos,
 .caja-opc_retos,
 .caja-opc_parati {
-  background: url(../img/b.jpg);
-  height: 270px;
-  position: relative;
-  text-align: center; }
-  .caja-opc_comunidad .icon-100,
-  .caja-opc_evento .icon-100,
-  .caja-opc_comida .icon-100,
-  .caja-opc_aliados .icon-100,
-  .caja-opc_misaplausos .icon-100,
-  .caja-opc_retos .icon-100,
-  .caja-opc_parati .icon-100 {
-    color: var(--blanco-grisacio);
-    font-size: 10em;
-    margin-top: 0.05em;
-    position: relative;
-    z-index: 100; }
-  .caja-opc_comunidad .titulo-100,
-  .caja-opc_evento .titulo-100,
-  .caja-opc_comida .titulo-100,
-  .caja-opc_aliados .titulo-100,
-  .caja-opc_misaplausos .titulo-100,
-  .caja-opc_retos .titulo-100,
-  .caja-opc_parati .titulo-100 {
-    color: var(--blanco-grisacio);
-    margin: 0;
-    position: relative;
-    z-index: 100; }
-  .caja-opc_comunidad:before,
-  .caja-opc_evento:before,
-  .caja-opc_comida:before,
-  .caja-opc_aliados:before,
-  .caja-opc_misaplausos:before,
-  .caja-opc_retos:before,
-  .caja-opc_parati:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.6)), to(rgba(209, 200, 119, 0.7)));
-    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
-    background: -o-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
-    background: linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
+  padding: 0;
+  margin: 0; }
+  .caja-opc_evento img,
+  .caja-opc_comida img,
+  .caja-opc_aliados img,
+  .caja-opc_misaplausos img,
+  .caja-opc_retos img,
+  .caja-opc_parati img {
     width: 100%;
-    height: 270px;
-    z-index: 50; }
+    height: 100%; }
 
-.img-50 {
-  color: var(--blanco-grisacio);
-  text-align: center; }
-  .img-50 .icon-50 {
-    font-size: 6em;
-    margin-top: 0.3em;
-    position: relative;
-    z-index: 50; }
-  .img-50 .titulo-50 {
-    font-size: 1.5em;
-    margin: 0;
-    margin-top: 0;
-    position: relative;
-    z-index: 50; }
+.caja-opc_misaplausos img {
+  margin-top: -2px;
+  margin-left: -2px;
+  width: 102.8%;
+  height: 102.8%; }
 
-.color-degradado {
-  background: url(../img/c.jpg);
-  background-size: cover;
-  height: 22vh;
-  position: relative; }
-  .color-degradado:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.6)), to(rgba(209, 200, 119, 0.7)));
-    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
-    background: -o-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
-    background: linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
-    width: 100%;
-    height: 22vh; }
+.caja-opc_retos img {
+  margin-top: -3px;
+  width: 101%;
+  height: 101%; }
 
-.color-solido {
-  background: url(../img/c.jpg);
-  background-size: cover;
-  height: 22vh;
-  position: relative; }
-  .color-solido:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: auto;
-    background: rgba(89, 203, 164, 0.6);
-    width: 100%;
-    height: 22vh; }
+.caja-opc_parati img {
+  margin-top: -3px;
+  width: 101%;
+  height: 101%; }
 
 .body-carga {
   background: #fff; }
@@ -566,6 +515,10 @@ input[type="password"] {
     font-size: 11px;
     color: #888; }
 
+.body-bg-transparenteNormal {
+  background: url(../img/bg-transparente.png);
+  overflow: hidden; }
+
 .footer-register {
   display: -webkit-box;
   display: -webkit-flex;
@@ -600,12 +553,22 @@ span.toggle {
     border-radius: 50px !important;
     top: 0.2em !important;
     left: 0.2em !important; }
+  @media screen and (max-width: 321px) {
+    span.toggle {
+      width: 70px !important;
+      height: 40px !important; }
+      span.toggle:after {
+        width: 33px !important;
+        height: 33px !important; } }
 
 .togglebutton label input[type=checkbox]:checked + span.toggle {
   background: rgba(12, 173, 165, 0.7) !important; }
 
 .togglebutton label input[type=checkbox]:checked + .toggle:after {
   left: 38px !important; }
+  @media screen and (max-width: 321px) {
+    .togglebutton label input[type=checkbox]:checked + .toggle:after {
+      left: 34px !important; } }
 
 .terminos_condiciones {
   color: #fff !important;
@@ -619,10 +582,28 @@ span.toggle {
   .terminos_condiciones:hover, .terminos_condiciones:active, .terminos_condiciones:focus {
     color: #fff !important;
     text-decoration: none !important; }
+  @media screen and (max-width: 321px) {
+    .terminos_condiciones {
+      font-size: 0.9em !important;
+      left: 5em;
+      bottom: 17em; } }
 
 .text-logo {
   margin-top: -0.5em;
   text-align: center; }
+
+@media screen and (max-width: 321px) {
+  .body-bg-transparenteNormal {
+    overflow-y: auto !important; }
+    .body-bg-transparenteNormal::-webkit-scrollbar {
+      width: 1px !important; }
+  .form-register .content .form-group label {
+    font-size: 1.4em !important; }
+  .form-register .content .form-group input[type="text"],
+  .form-register .content .form-group input[type="password"] {
+    font-size: 1em !important; }
+  .btn-facebook-small {
+    font-size: 1.4em; } }
 
 .xd {
   overflow-y: auto;
