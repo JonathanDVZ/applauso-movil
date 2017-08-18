@@ -395,3 +395,69 @@
 .tutorial-page .title{
     color: #FFFFFF;
 }
+
+.cabecera{
+    background:#0E6565;padding:.5em;
+}
+
+.fondo_gris{
+    background-color: #f5f5f5;
+}
+.nouppercase{
+    text-transform: none;
+}
+.input{
+    border:none;
+    background-color: #fff;
+    padding: .8em;
+    width: 80%;
+}
+.borderb{
+    border-bottom: 1px solid #ccc;
+}
+.icon_search{
+    background-color: #0E6565;
+    padding: .2em;
+    width: 15%;
+    color: #fff;
+}
+.icon_titulo{
+    padding: 1em;
+    padding-bottom: 0em;
+}
+.icon_titulo h4{
+    padding-left: 1em;
+}
+.contenedor{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.nbottom{
+    margin-bottom: 0em;
+}
+.cont_info{
+    background-color: #fff;
+    margin-bottom: 1em;
+}
+.cont_info button{
+    margin-bottom: 0em;
+    margin-top: 0em;
+    background: #0ACADA;
+    border: none;
+}
+.cont_info h4, .cont_info h6, .cont_info p{
+    margin-bottom: 0em;
+    margin-top: 0em;
+    text-transform: none;
+}
+.cont_info h4, .cont_info h6{
+    color: #0CADA5;
+    font-weight: bold;
+}
+.cont_info p{
+    font-size: 12px;
+}
+.npadding{
+    padding-left: 0em;
+    padding-right:0em;
+}
