@@ -5,6 +5,13 @@ body {
   body::-webkit-scrollbar {
     width: 0; }
 
+.logo_sinLetras {
+  width: 160px;
+  height: 150px; }
+  .logo_sinLetras img {
+    width: 100%;
+    height: 150px; }
+
 /*
 PARA USARLOS SOLO DA ESTILOS NORMALES Y LLAMA LA VARIBLE DE
 ESTA FORMA
@@ -239,6 +246,21 @@ input[type="password"] {
   background: url(../img/bg.png);
   background-size: 120vw 120vh;
   background-position: -1.5em -1.5em; }
+
+.caja-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .body-opc {
   overflow-x: hidden;
