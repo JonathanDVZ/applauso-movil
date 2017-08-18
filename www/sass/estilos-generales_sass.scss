@@ -7,6 +7,15 @@ body {
   }
 }
 
+.logo_sinLetras {
+  width: 160px;
+  height: 150px;
+  img {
+    width: 100%;
+    height: 150px;
+  }
+}
+
 @import 'components/colores';
 @import 'components/login';
 @import 'components/button';

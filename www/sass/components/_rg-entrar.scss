@@ -1,11 +1,11 @@
+.body-bg {
+  background: url(../img/bg.png);
+  background-size: 120vw 120vh;
+  background-position: -1.5em -1.5em;
+}
+
 .caja-center {
-  padding: 13em 0;
-}
-
-.btn-rg {
-  margin-top: 0.5em;
-}
-
-.btn-et {
-  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

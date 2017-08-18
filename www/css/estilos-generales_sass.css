@@ -5,6 +5,13 @@ body {
   body::-webkit-scrollbar {
     width: 0; }
 
+.logo_sinLetras {
+  width: 160px;
+  height: 150px; }
+  .logo_sinLetras img {
+    width: 100%;
+    height: 150px; }
+
 /*
 PARA USARLOS SOLO DA ESTILOS NORMALES Y LLAMA LA VARIBLE DE
 ESTA FORMA
@@ -14,8 +21,10 @@ color: var(--azul);
 */
 :root {
   --azul: #0cada5;
+  --claro-verde: #59cba4;
   --Mdark-verde: #195656;
   --dark-verde: #1c3e3e;
+  --pastel: #cbcd7f;
   --naranja: #f09305;
   --blanco-grisacio: #f1f4f4; }
 
@@ -64,8 +73,8 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
   .logo_img {
-    width: 120px;
-    height: 140px; }
+    width: 300px;
+    height: 100px; }
 
 .olvidaste_ctñ,
 .olvidaste_ct:focus,
@@ -129,7 +138,7 @@ body {
   border: none !important; }
 
 .btn-facebook {
-  background: #484cad !important;
+  background: #4255a7 !important;
   font-size: 2em;
   line-height: 0.8em;
   font-weight: bold; }
@@ -149,7 +158,7 @@ body {
   border: none !important; }
 
 .btn-facebook-small {
-  background: #484cad !important;
+  background: #4255a7 !important;
   font-size: 1.8em;
   line-height: 0.6em;
   font-weight: bold; }
@@ -199,7 +208,7 @@ input[type="password"] {
   height: 100vh;
   overflow-x: hidden;
   background: url(../img/a.jpg);
-  background-size: 100vw 100vh;
+  background-size: 100vw 100%;
   position: relative; }
   .body-degradado-img:before {
     content: "";
@@ -207,10 +216,10 @@ input[type="password"] {
     top: 0;
     left: 0;
     margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 173, 165, 0.5)), to(rgba(240, 147, 5, 0.2)));
-    background: -webkit-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.2));
-    background: -o-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.2));
-    background: linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.2));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.5)), to(rgba(203, 205, 127, 0.4)));
+    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
+    background: -o-linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
+    background: linear-gradient(rgba(89, 203, 164, 0.5), rgba(203, 205, 127, 0.4));
     width: 100%;
     height: 100vh; }
 
@@ -233,14 +242,25 @@ input[type="password"] {
   border: 2px solid #fff;
   border-radius: 12px; }
 
+.body-bg {
+  background: url(../img/bg.png);
+  background-size: 120vw 120vh;
+  background-position: -1.5em -1.5em; }
+
 .caja-center {
-  padding: 13em 0; }
-
-.btn-rg {
-  margin-top: 0.5em; }
-
-.btn-et {
-  margin-top: 0.5em; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .body-opc {
   overflow-x: hidden;
@@ -263,7 +283,7 @@ input[type="password"] {
 
 .logo_cinta {
   margin-top: 0.8em;
-  width: 55px;
+  width: 250px;
   height: 55px;
   position: relative; }
   .logo_cinta img {
@@ -314,7 +334,6 @@ input[type="password"] {
   .caja-opc_parati .titulo-100 {
     color: var(--blanco-grisacio);
     margin: 0;
-    margin-top: -1em;
     position: relative;
     z-index: 100; }
   .caja-opc_comunidad:before,
@@ -329,10 +348,10 @@ input[type="password"] {
     top: 0;
     left: 0;
     margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 173, 165, 0.5)), to(rgba(240, 147, 5, 0.6)));
-    background: -webkit-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
-    background: -o-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
-    background: linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.6)), to(rgba(209, 200, 119, 0.7)));
+    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
+    background: -o-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
+    background: linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
     width: 100%;
     height: 270px;
     z-index: 50; }
@@ -363,10 +382,10 @@ input[type="password"] {
     top: 0;
     left: 0;
     margin: auto;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 173, 165, 0.5)), to(rgba(240, 147, 5, 0.6)));
-    background: -webkit-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
-    background: -o-linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
-    background: linear-gradient(rgba(12, 173, 165, 0.5), rgba(240, 147, 5, 0.6));
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(89, 203, 164, 0.6)), to(rgba(209, 200, 119, 0.7)));
+    background: -webkit-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
+    background: -o-linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
+    background: linear-gradient(rgba(89, 203, 164, 0.6), rgba(209, 200, 119, 0.7));
     width: 100%;
     height: 22vh; }
 
@@ -381,7 +400,7 @@ input[type="password"] {
     top: 0;
     left: 0;
     margin: auto;
-    background: rgba(12, 173, 165, 0.6);
+    background: rgba(89, 203, 164, 0.6);
     width: 100%;
     height: 22vh; }
 
@@ -389,16 +408,39 @@ input[type="password"] {
   background: #fff; }
 
 .caja-carga {
-  text-align: center;
-  padding: 6em 0; }
-
-.img-carga {
-  width: 200px;
-  height: 210px; }
-
-.text-carga {
-  margin-top: -0.5em;
-  font-size: 4em; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .caja-carga_logo {
+    width: 250px;
+    height: 300px;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .caja-carga_logo img {
+      width: 100%;
+      height: 300px; }
+    @media screen and (max-width: 321px) {
+      .caja-carga_logo {
+        width: 200px;
+        height: 250px; }
+        .caja-carga_logo img {
+          height: 250px; } }
 
 .body-blanco {
   background: #fff;
