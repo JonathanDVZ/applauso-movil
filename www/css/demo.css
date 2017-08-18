@@ -464,3 +464,21 @@
 .azul{
     color: #0ACADA;
 }
+
+.fondo_perfil{
+    background: #264747;
+}
+.fondo_perfil h3{
+   color: #fff;
+}
+
+.cont_perfil p{
+    margin-bottom: 0em;
+    color: #A9A6A6;
+    font-size: 16px;
+}
+
+.cont_perfil h3{
+    margin-top: 0em;
+    color: #333;
+}
