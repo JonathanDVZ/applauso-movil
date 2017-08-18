@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>HelloCordova</name>
+<widget id="io.cordova.applauso" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Applauso</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Soluciones únicas para experiencias inolvidables.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="info@pladecompany.com" href="https://pladecompany.com">
+        Plade Company
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
