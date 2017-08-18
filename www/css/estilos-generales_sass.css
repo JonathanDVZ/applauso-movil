@@ -66,7 +66,7 @@ body {
   -ms-flex-pack: center;
   justify-content: center; }
   .logo_img {
-    width: 250px;
+    width: 300px;
     height: 100px; }
 
 .olvidaste_ctñ,
@@ -201,7 +201,7 @@ input[type="password"] {
   height: 100vh;
   overflow-x: hidden;
   background: url(../img/a.jpg);
-  background-size: 100vw 100vh;
+  background-size: 100vw 100%;
   position: relative; }
   .body-degradado-img:before {
     content: "";
@@ -235,14 +235,10 @@ input[type="password"] {
   border: 2px solid #fff;
   border-radius: 12px; }
 
-.caja-center {
-  padding: 13em 0; }
-
-.btn-rg {
-  margin-top: 0.5em; }
-
-.btn-et {
-  margin-top: 0.5em; }
+.body-bg {
+  background: url(../img/bg.png);
+  background-size: 120vw 120vh;
+  background-position: -1.5em -1.5em; }
 
 .body-opc {
   overflow-x: hidden;
@@ -390,16 +386,39 @@ input[type="password"] {
   background: #fff; }
 
 .caja-carga {
-  text-align: center;
-  padding: 6em 0; }
-
-.img-carga {
-  width: 200px;
-  height: 210px; }
-
-.text-carga {
-  margin-top: -0.5em;
-  font-size: 4em; }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .caja-carga_logo {
+    width: 250px;
+    height: 300px;
+    margin-top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
+    .caja-carga_logo img {
+      width: 100%;
+      height: 300px; }
+    @media screen and (max-width: 321px) {
+      .caja-carga_logo {
+        width: 200px;
+        height: 250px; }
+        .caja-carga_logo img {
+          height: 250px; } }
 
 .body-blanco {
   background: #fff;
