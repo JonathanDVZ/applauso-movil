@@ -65,6 +65,25 @@ body {
       width: 80px;
       height: 100px; } }
 
+.logo-cinta {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 200px;
+  height: 100%; }
+  .logo-cinta img {
+    width: 100%;
+    height: 50px; }
+
 /*
 PARA USARLOS SOLO DA ESTILOS NORMALES Y LLAMA LA VARIBLE DE
 ESTA FORMA
@@ -75,7 +94,7 @@ color: var(--azul);
 :root {
   --azul: #0cada5;
   --claro-verde: #32ac87;
-  --Mdark-verde: #195656;
+  --Mdark-verde: #0e6565;
   --dark-verde: #1c3e3e;
   --pastel: #cbcd7f;
   --naranja: #f09305;
@@ -610,6 +629,21 @@ span.toggle {
   overflow-x: hidden;
   background: #fff; }
 
+.barra-home_menu {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 50px; }
+  .barra-home_menu .icono-home {
+    width: 100%;
+    height: 35px; }
+
 ul.reset {
   list-style: none;
   padding: 0;
@@ -647,9 +681,6 @@ ul.reset {
     width: 100%;
     line-height: 5em;
     border-bottom: 2px solid rgba(51, 51, 51, 0.2); }
-  .detalles-opc_icon {
-    color: var(--azul);
-    font-size: 4em; }
   .detalles-opc_link {
     color: #555;
     text-decoration: none;
@@ -658,6 +689,20 @@ ul.reset {
     .detalles-opc_link:hover, .detalles-opc_link:active, .detalles-opc_link:focus {
       color: #555;
       text-decoration: none; }
+
+.icon-personas,
+.icon-manos,
+.icon-carita,
+.icon-pata {
+  width: 60px;
+  height: 60px; }
+
+.icon-personas {
+  height: 80px; }
+
+.icon-carita {
+  margin-left: -3px;
+  width: 63px; }
 
 .ocultar {
   display: none; }
