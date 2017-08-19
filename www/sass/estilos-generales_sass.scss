@@ -29,7 +29,12 @@ body {
     height: 100%;
   }
 
+  @media screen and (max-width: 361px) {
+    margin-top: -3em;
+  }
+
   @media screen and (max-width: 321px) {
+    margin: 0;
     width: 100px;
     height: 90px;
   }
@@ -60,6 +65,14 @@ body {
     height: 100%;
   }
 
+  @media screen and (max-width: 376px) {
+    margin-top: -2em;
+  }
+
+  @media screen and (max-width: 361px) {
+    margin-top: -5em;
+  }
+
   @media screen and (max-width: 321px) {
     margin-top: -2em;
     width: 80px;
@@ -81,6 +94,7 @@ body {
   }
 
   @media screen and (max-width: 321px) {
+    margin-top: -6em;
     width: 80px;
     height: 100px;
   }

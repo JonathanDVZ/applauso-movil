@@ -22,8 +22,12 @@ body {
   .logo_sinLetras-login img {
     width: 100%;
     height: 100%; }
+  @media screen and (max-width: 361px) {
+    .logo_sinLetras-login {
+      margin-top: -3em; } }
   @media screen and (max-width: 321px) {
     .logo_sinLetras-login {
+      margin: 0;
       width: 100px;
       height: 90px; } }
 
@@ -45,6 +49,12 @@ body {
   .logo-conLetras_register img {
     width: 100%;
     height: 100%; }
+  @media screen and (max-width: 376px) {
+    .logo-conLetras_register {
+      margin-top: -2em; } }
+  @media screen and (max-width: 361px) {
+    .logo-conLetras_register {
+      margin-top: -5em; } }
   @media screen and (max-width: 321px) {
     .logo-conLetras_register {
       margin-top: -2em;
@@ -63,6 +73,7 @@ body {
     height: 100%; }
   @media screen and (max-width: 321px) {
     .logo-manilla {
+      margin-top: -6em;
       width: 80px;
       height: 100px; } }
 
@@ -238,6 +249,9 @@ body {
   line-height: 0.8em;
   font-weight: 400; }
 
+.input-login {
+  color: var(--azul) !important; }
+
 .control-label {
   font-size: 1.6em !important;
   margin-top: -2px !important; }
@@ -331,7 +345,6 @@ input[type="password"] {
       margin-right: 0.5em; }
   @media screen and (max-width: 321px) {
     .caja-manilla_titulo_uno {
-      margin-top: -1em;
       font-size: 2em; }
     .caja-manilla_titulo_dos {
       font-size: 2.5em; } }
@@ -352,8 +365,9 @@ input[type="password"] {
 .body-degradado-img {
   height: 100vh;
   overflow-x: hidden;
-  background: url(../img/bg3.png);
-  background-size: 100vw 100%;
+  background: url(../img/bg4.png);
+  background-position: 0 -1em;
+  background-size: 102vw 103%;
   position: relative; }
   @media screen and (max-width: 321px) {
     .body-degradado-img {
@@ -383,15 +397,33 @@ input[type="password"] {
 
 .input-codigo {
   width: 100%;
-  line-height: 0.5em;
+  height: 60px;
   padding: 0.8em;
   background: none;
   color: #fff;
   border: 3px solid #fff;
-  border-radius: 20px; }
+  border-radius: 18px; }
+  .input-codigo::-webkit-input-placeholder {
+    color: #fff; }
+  .input-codigo::-moz-placeholder {
+    color: #fff; }
+  .input-codigo:-ms-input-placeholder {
+    color: #fff; }
+  .input-codigo::placeholder {
+    color: #fff; }
   @media screen and (max-width: 321px) {
     .input-codigo {
       height: 50px; } }
+
+.btn-qr {
+  margin-top: 1.5em;
+  width: 300px; }
+
+.text-manilla {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 1em; }
 
 @media screen and (max-width: 321px) {
   .btn-qr {
@@ -401,20 +433,28 @@ input[type="password"] {
   background: url(../img/bg.png);
   background-size: 102vw 100vh; }
 
-.caja-center {
+.rg-entrar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.caja-rg-entrar {
+  margin-top: 2em; }
 
 @media screen and (max-width: 321px) {
   .body-bg,
@@ -452,21 +492,45 @@ input[type="password"] {
     width: 100%;
     height: 100%; }
 
+.caja-opc_evento img {
+  margin-top: -1px; }
+
 .caja-opc_misaplausos img {
-  margin-top: -2px;
-  margin-left: -2px;
-  width: 102.8%;
-  height: 102.8%; }
+  margin-left: -1px;
+  width: 101%;
+  height: 100%; }
 
 .caja-opc_retos img {
-  margin-top: -3px;
-  width: 101%;
-  height: 101%; }
+  margin-top: -1px;
+  width: 100%;
+  height: 100%; }
 
 .caja-opc_parati img {
-  margin-top: -3px;
-  width: 101%;
-  height: 101%; }
+  margin-top: -2px;
+  width: 100%;
+  height: 100%; }
+
+.caja-opc_aliados img {
+  margin-top: -1px; }
+
+.caja-opc_misaplausos img {
+  margin-top: -1px; }
+
+.caja-opc_retos img {
+  margin-top: -2px; }
+
+.caja-opc_parati img {
+  margin-top: -4px; }
+
+@media screen and (max-width: 321px) {
+  .caja-opc_aliados img {
+    margin-top: -1px; }
+  .caja-opc_misaplausos img {
+    margin-top: -1px; }
+  .caja-opc_retos img {
+    margin-top: -2px; }
+  .caja-opc_parati img {
+    margin-top: -4px; } }
 
 .body-carga {
   background: #fff; }
@@ -718,7 +782,7 @@ ul.reset {
     padding-top: 0.5em;
     width: 100%;
     line-height: 5em;
-    border-bottom: 2px solid rgba(51, 51, 51, 0.2); }
+    border-bottom: 2px solid var(--azul); }
   .detalles-opc_link {
     color: #555;
     text-decoration: none;

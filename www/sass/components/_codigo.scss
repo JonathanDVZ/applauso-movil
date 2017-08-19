@@ -1,8 +1,9 @@
 .body-degradado-img {
   height: 100vh;
   overflow-x: hidden;
-  background: url(../img/bg3.png);
-  background-size: 100vw 100%;
+  background: url(../img/bg4.png);
+  background-position: 0 -1em;
+  background-size: 102vw 103%;
   position: relative;
 
   @media screen and (max-width: 321px) {
@@ -38,16 +39,32 @@
 
 .input-codigo {
   width: 100%;
-  line-height: 0.5em;
+  height: 60px;
   padding: 0.8em;
   background: none;
   color: #fff;
   border: 3px solid #fff;
-  border-radius: 20px;
+  border-radius: 18px;
+
+  &::placeholder {
+    color: #fff;
+  }
 
   @media screen and (max-width: 321px) {
     height: 50px;
   }
+}
+
+.btn-qr {
+  margin-top: 1.5em;
+  width: 300px;
+}
+
+.text-manilla {
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  margin-top: 1em;
 }
 
 @media screen and (max-width: 321px) {
