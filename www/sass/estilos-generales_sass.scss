@@ -96,6 +96,14 @@ body {
     width: 100%;
     height: 50px;
   }
+
+  @media screen and (max-width: 321px) {
+    width: 170px;
+
+    img {
+      height: 40px;
+    }
+  }
 }
 
 @import 'components/colores';

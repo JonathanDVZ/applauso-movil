@@ -64,11 +64,15 @@
 
   &_icon {
     font-size: 2em;
-    color: #888;
+    color: #999;
   }
 
   &_titulo {
     font-size: 11px;
     color: #888;
+
+    @media screen and (max-width: 321px) {
+      font-size: 9px;
+    }
   }
 }

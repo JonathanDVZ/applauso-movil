@@ -64,6 +64,10 @@ ul.reset {
       color: #555;
       text-decoration: none;
     }
+
+    @media screen and (max-width: 321px) {
+      font-size: 1.2em;
+    }
   }
 }
 .icon-personas,
