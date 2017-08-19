@@ -1,0 +1,42 @@
+			.log{
+				background: #0E6565;
+				padding: 5px;
+			}
+
+		
+
+			.descri{
+				padding-top: 60px;
+
+			}
+			.cont_info h4{
+				color: #fff;
+				font-weight: 400;
+			}
+
+			.cont_info h5{
+				color: #488e54;
+				margin: 0;
+			}
+
+			.cont_info p{
+				font-size: 23px;
+				color: #bf8316;
+			}
+
+			.cont_info, .cabecera{
+				background: #155353;
+			}
+
+
+			.list-group-item{
+
+
+				border: none;
+				font-size: 18px;
+				padding: 18px 10px 18px 18px; ;
+			}
+		
+			.list-group .list-group-item a{
+				color: #000;
+			}
