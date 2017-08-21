@@ -4,9 +4,10 @@
 	padding: 10px 15px;
 	margin-bottom: -1px;
 	background-color: #fff;
-	border-bottom: 2px solid #ddd;
 	}
-
+.social_borde{
+	border-bottom: 1px solid #0CADA5;
+}
 .social a{
 	font-size: 17px;
 	color:  #9E9E9E;
