@@ -1,0 +1,42 @@
+			.log{
+				background: #0E6565;
+				padding: 5px;
+			}
+
+
+			.transacciones{
+				color: #fff;
+				font-size: 15px;
+				background: #264747;
+				padding: 8px 15px;
+				border: none;
+			}
+
+
+			.descri{
+				padding-top: 60px;
+
+			}
+			.cont_info h4{
+				color: #fff;
+				font-weight: 400;
+			}
+
+			.cont_info h5{
+				color: #488e54;
+				margin: 0;
+			}
+
+			.cont_info p{
+				font-size: 23px;
+				color: #bf8316;
+			}
+
+			.cont_info{
+				background: #0E6565;
+			}
+
+			.txt-h4{
+				font-size: 20px;
+			}
+			
