@@ -1,0 +1,148 @@
+// home-opc.html
+.body-opc {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.caja-opc_cinta {
+  position: relative;
+  display: flex;
+  margin-left: -1em;
+  width: 100vw;
+  height: 70px;
+  background: var(--dark-verde);
+  justify-content: center;
+}
+
+.logo_cinta {
+  margin-top: 0.8em;
+  width: 250px;
+  height: 55px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55px;
+  }
+}
+
+.caja-opc_cinta_titulo {
+  color: var(--naranja);
+  font-size: 3em;
+  margin: 0;
+  padding-left: 0.1em;
+  margin-top: 0.1em;
+
+  .color-azul {
+    color: var(--azul);
+  }
+}
+
+.caja-opc_comunidad,
+.caja-opc_evento,
+.caja-opc_comida,
+.caja-opc_aliados,
+.caja-opc_misaplausos,
+.caja-opc_retos,
+.caja-opc_parati {
+  background: url(../img/b.jpg);
+  height: 270px;
+  position: relative;
+  text-align: center;
+
+  @media screen and (max-width: 321px) {
+
+  }
+
+  .icon-100 {
+    color: var(--blanco-grisacio);
+    font-size: 10em;
+    margin-top: 0.05em;
+    position: relative;
+    z-index: 100;
+  }
+
+  .titulo-100 {
+    color: var(--blanco-grisacio);
+    margin: 0;
+    position: relative;
+    z-index: 100;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: linear-gradient(
+      rgba(#32ac87, 0.6),
+      rgba(#d1c877, 0.7)
+    );
+    width: 100%;
+    height: 270px;
+    z-index: 50;
+  }
+}
+
+.img-50 {
+  color: var(--blanco-grisacio);
+  text-align: center;
+
+  .icon-50 {
+    font-size: 6em;
+    margin-top: 0.3em;
+    position: relative;
+    z-index: 50;
+  }
+
+  .titulo-50 {
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 0;
+    position: relative;
+    z-index: 50;
+  }
+}
+
+.color-degradado {
+  background: url(../img/c.jpg);
+  background-size: cover;
+  height: 22vh;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: linear-gradient(
+      rgba(#32ac87, 0.6),
+      rgba(#d1c877, 0.7)
+    );
+    width: 100%;
+    height: 22vh;
+  }
+}
+
+.color-solido {
+  background: url(../img/c.jpg);
+  background-size: cover;
+  height: 22vh;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(#32ac87, 0.6);
+    width: 100%;
+    height: 22vh;
+  }
+}

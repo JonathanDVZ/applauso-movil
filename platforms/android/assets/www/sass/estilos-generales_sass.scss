@@ -1,0 +1,138 @@
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 0;
+  }
+}
+
+.logo_sinLetras {
+  width: 160px;
+  height: 150px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 321px) {
+    width: 120px;
+    height: 110px;
+  }
+}
+
+.logo_sinLetras-login {
+  width: 140px;
+  height: 130px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 361px) {
+    margin-top: -3em;
+  }
+
+  @media screen and (max-width: 321px) {
+    margin: 0;
+    width: 100px;
+    height: 90px;
+  }
+}
+
+.logo-conLetras {
+  width: 140px;
+  height: 160px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 321px) {
+    margin-top: -2em;
+    width: 100px;
+    height: 120px;
+  }
+}
+
+.logo-conLetras_register {
+  width: 120px;
+  height: 140px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 376px) {
+    margin-top: -2em;
+  }
+
+  @media screen and (max-width: 361px) {
+    margin-top: -5em;
+  }
+
+  @media screen and (max-width: 321px) {
+    margin-top: -2em;
+    width: 80px;
+    height: 100px;
+  }
+}
+
+.logo-manilla {
+  margin-top: -3em;
+  position: relative;
+  width: 140px;
+  height: 160px;
+
+  img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media screen and (max-width: 321px) {
+    margin-top: -6em;
+    width: 80px;
+    height: 100px;
+  }
+}
+
+.logo-cinta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 321px) {
+    width: 170px;
+
+    img {
+      height: 40px;
+    }
+  }
+}
+
+@import 'components/colores';
+@import 'components/login';
+@import 'components/button';
+@import 'components/inputs';
+@import 'components/manilla';
+@import 'components/codigo';
+@import 'components/rg-entrar';
+@import 'components/home-opc';
+@import 'components/carga';
+@import 'components/estructura-menu';
+@import 'components/register';
+@import 'components/comunidad';
+@import 'components/eventos';
+@import 'components/kids';
+@import 'components/mascotas';
