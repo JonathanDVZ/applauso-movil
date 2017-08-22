@@ -638,7 +638,8 @@ input[type="password"] {
 
 .body-bg-transparenteNormal {
   background: url(../img/bg-transparente.png);
-  overflow: hidden; }
+    overflow-y: auto !important;
+background-size: 100vw 100%; }
 
 .footer-register {
   display: -webkit-box;
@@ -848,7 +849,6 @@ ul.reset {
 .body-bg-transparente-kids {
   overflow-y: auto !important;
   background: url(../img/bg-transparente.png);
-  background-attachment: fixed;
   background-size: 100vw 100%; }
   .body-bg-transparente-kids::-webkit-scrollbar {
     width: 0 !important;
