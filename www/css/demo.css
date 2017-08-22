@@ -519,3 +519,11 @@
     width: 100%;
     border-radius: 1em;
 }
+
+.fan_box{
+    margin-top: 3em;
+}
+
+.fan_box h3, .fan_box h5, .fan_box p{
+    color: #fff;
+}
