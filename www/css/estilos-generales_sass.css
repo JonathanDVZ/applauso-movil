@@ -310,14 +310,12 @@ input[type="password"] {
   margin-top: 2em; }
   .caja-manilla_titulo_uno, .caja-manilla_titulo_dos {
     color: var(--blanco-grisacio);
-    margin: 0;}
+    margin: 0; }
   .caja-manilla_titulo_uno {
-    font-size: 3em;
-    color: #fff ; }
+    font-size: 3em; }
   .caja-manilla_titulo_dos {
     font-size: 3.5em;
     margin-top: -0.2em;
-    color: #fff ;
     text-transform: uppercase; }
   .caja-manilla_saltar {
     margin-top: 2em;
@@ -847,21 +845,426 @@ ul.reset {
   width: 50px;
   height: 45px; }
 
+.body-bg-transparente-kids {
+  overflow-y: auto !important;
+  background: url(../img/bg-transparente.png);
+  background-attachment: fixed;
+  background-size: 100vw 100%; }
+  .body-bg-transparente-kids::-webkit-scrollbar {
+    width: 0 !important;
+    background: transparent !important; }
 
-input[type="text"],input[type="password"], input[type="number"], select, textarea, .form-control{
-  color: #0CADA5 !important;
-}
-::-webkit-input-placeholder { /* Chrome */
-  color: #0CADA5 !important;
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: #0CADA5 !important;
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: #0CADA5 !important;
-  opacity: 1;
-}
-:-moz-placeholder { /* Firefox 4 - 18 */
-  color: #0CADA5 !important;
-  opacity: 1;
-}
+.caja-kids {
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  padding: 3em;
+  padding-bottom: 5em;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .caja-kids_lista {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3em;
+    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #fff; }
+    .caja-kids_lista .LOGOcarita {
+      width: 65px;
+      height: 60px; }
+      .caja-kids_lista .LOGOcarita img {
+        width: 100%;
+        height: 100%; }
+    .caja-kids_lista .p-kids_uno {
+      margin: 0;
+      font-size: 1.8em;
+      color: #fff; }
+  .caja-kids_asignar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0.5em;
+    width: 100%;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .caja-kids_asignar .LOGOadd {
+      margin-left: 0.5em;
+      width: 45px;
+      height: 45px; }
+      .caja-kids_asignar .LOGOadd img {
+        width: 100%;
+        height: 100%; }
+    .caja-kids_asignar .p-kids_tres {
+      margin: 0;
+      font-size: 1.5em;
+      color: #fff;
+      font-weight: bold;
+      padding-left: 0.5em; }
+  .caja-kids_listarea {
+    width: 100%;
+    padding-bottom: 3em; }
+    .caja-kids_listarea h3 {
+      margin: 0;
+      color: #fff;
+      font-weight: bold;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #fff; }
+    .caja-kids_listarea .tareas-kids {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      margin-top: 1em;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #fff; }
+      .caja-kids_listarea .tareas-kids_img {
+        width: 40px;
+        height: 40px;
+        border: 2px solid rgba(255, 255, 255, 0.4);
+        border-radius: 50%; }
+      .caja-kids_listarea .tareas-kids_tarea {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .caja-kids_listarea .tareas-kids_tarea h1 {
+          margin: 0;
+          margin-left: 0.5em;
+          font-size: 1.3em;
+          color: #fff; }
+      .caja-kids_listarea .tareas-kids_puntos {
+        margin: 0;
+        color: #fff;
+        margin-top: 0.8em;
+        margin-right: 0.5em;
+        font-size: 1.2em; }
+      .caja-kids_listarea .tareas-kids_mas {
+        margin-left: 0.5em;
+        width: 30px;
+        height: 30px; }
+        .caja-kids_listarea .tareas-kids_mas img {
+          width: 100%;
+          height: 100%; }
+  .caja-kids_agg {
+    width: 100%; }
+    .caja-kids_agg .btnKids {
+      margin-top: 0.5em;
+      width: 100% !important;
+      text-align: left;
+      line-height: 2em;
+      font-size: 1.8em;
+      font-weight: bold;
+      padding-left: 0.5em;
+      color: #fff;
+      background: rgba(255, 255, 255, 0.25);
+      outline: none;
+      border: none; }
+  .caja-kids_carita {
+    margin-top: 5em;
+    width: 165px;
+    height: 160px; }
+    .caja-kids_carita img {
+      width: 100%;
+      height: 100%; }
+  .caja-kids h4 {
+    font-size: 1.9em;
+    font-weight: 100;
+    color: #fff;
+    margin: 0; }
+  .caja-kids .p-kids_dos {
+    font-size: 1.9em;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+    margin-top: 1.8em; }
+  .caja-kids_add {
+    margin-top: 1.5em;
+    width: 90px;
+    height: 90px; }
+    .caja-kids_add img {
+      width: 100%;
+      height: 100%; }
+  .caja-kids .input-kids {
+    color: var(--azul) !important; }
+  @media screen and (max-width: 321px) {
+    .caja-kids {
+      padding: 2em;
+      padding-bottom: 6em; }
+      .caja-kids_lista {
+        margin-top: 4em;
+        padding-bottom: 0.5em; }
+        .caja-kids_lista .LOGOcarita {
+          width: 45px;
+          height: 40px; }
+        .caja-kids_lista .p-kids_uno {
+          font-size: 1.3em; }
+      .caja-kids_asignar .LOGOadd {
+        width: 30px;
+        height: 30px; }
+      .caja-kids_asignar .p-kids_tres {
+        font-size: 1.3em; }
+      .caja-kids_listarea {
+        padding-bottom: 0.5em; }
+        .caja-kids_listarea h3 {
+          font-size: 1.5em; }
+        .caja-kids_listarea .tareas-kids {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em; }
+          .caja-kids_listarea .tareas-kids_img {
+            width: 30px;
+            height: 30px; }
+          .caja-kids_listarea .tareas-kids_tarea h1 {
+            font-size: 1.2em; }
+          .caja-kids_listarea .tareas-kids_puntos {
+            font-size: 0.7em;
+            margin-top: 1.3em; }
+          .caja-kids_listarea .tareas-kids_mas {
+            margin-left: 0.1em;
+            width: 25px;
+            height: 25px; }
+      .caja-kids_agg .btnKids {
+        font-size: 1.4em; }
+      .caja-kids_carita {
+        margin-top: 7em;
+        width: 105px;
+        height: 100px; }
+      .caja-kids h4 {
+        font-size: 1.5em; }
+      .caja-kids p {
+        font-size: 1.5em; }
+      .caja-kids_add {
+        width: 60px;
+        height: 60px; }
+      .caja-kids .input-kids {
+        width: 200px !important; } }
+
+.kids-footerTAREA {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background: #d8d39f; }
+  .kids-footerTAREA .btnKidsFooter {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    line-height: 2em;
+    font-size: 1.6em;
+    border-top: 1px solid #fff; }
+  @media screen and (max-width: 321px) {
+    .kids-footerTAREA .btnKidsFooter {
+      font-size: 1.2em; } }
+
+.caja-mascotas {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  padding: 4em;
+  padding-bottom: 2em; }
+  @media screen and (max-width: 321px) {
+    .caja-mascotas {
+      padding-bottom: 1.5em; } }
+  .caja-mascotas_pata {
+    margin-top: 3em;
+    width: 140px;
+    height: 110px; }
+    .caja-mascotas_pata img {
+      width: 100%;
+      height: 100%; }
+    @media screen and (max-width: 321px) {
+      .caja-mascotas_pata {
+        width: 100px;
+        height: 70px; } }
+  .caja-mascotas h2 {
+    margin: 0;
+    margin-top: -0.5em;
+    color: #fff; }
+    @media screen and (max-width: 321px) {
+      .caja-mascotas h2 {
+        font-size: 2em; } }
+  .caja-mascotas_sliderImg {
+    margin-top: 2em;
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .caja-mascotas_sliderImg .imagenes-container {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .caja-mascotas_sliderImg .imagenes-container_img {
+        width: 120px;
+        height: 120px; }
+        .caja-mascotas_sliderImg .imagenes-container_img img {
+          width: 100%;
+          height: 100%; }
+        @media screen and (max-width: 321px) {
+          .caja-mascotas_sliderImg .imagenes-container_img {
+            width: 100px;
+            height: 100px; } }
+  .caja-mascotas_texto {
+    text-align: center; }
+    .caja-mascotas_texto .titulo {
+      color: #fff;
+      font-size: 1.7em;
+      margin-top: 0.5em; }
+    .caja-mascotas_texto p {
+      color: #fff;
+      font-size: 1.2em; }
+    @media screen and (max-width: 321px) {
+      .caja-mascotas_texto .titulo {
+        font-size: 1.4em; }
+      .caja-mascotas_texto p {
+        font-size: 0.9em; } }
+  .caja-mascotas_clickAqui {
+    width: 100%;
+    padding: 0 0.5em; }
+  .caja-mascotas_resultados {
+    text-align: center;
+    margin-top: 1em; }
+    .caja-mascotas_resultados p {
+      color: #fff;
+      font-size: 1.2em;
+      margin: 0; }
+      @media screen and (max-width: 321px) {
+        .caja-mascotas_resultados p {
+          font-size: 0.9em; } }
+    .caja-mascotas_resultados .punto {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .caja-mascotas_resultados .punto h1 {
+        margin: 0;
+        font-weight: bold;
+        color: #fff;
+        font-size: 3em; }
+        @media screen and (max-width: 321px) {
+          .caja-mascotas_resultados .punto h1 {
+            font-size: 2.5em; } }
+      .caja-mascotas_resultados .punto .imgApplauso {
+        width: 70px;
+        height: 55px; }
+        .caja-mascotas_resultados .punto .imgApplauso img {
+          width: 100%;
+          height: 100%; }
+        @media screen and (max-width: 321px) {
+          .caja-mascotas_resultados .punto .imgApplauso {
+            width: 60px;
+            height: 45px; } }
+  .caja-mascotas_botones {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .caja-mascotas_botones .btn-mascotasTnpUno,
+    .caja-mascotas_botones .btn-mascotasTnpDos {
+      width: 125px;
+      border: 2px solid #fff;
+      color: #fff;
+      line-height: 0.2em;
+      border-radius: 50px;
+      font-weight: bold !important; }
+    .caja-mascotas_botones .btn-mascotasTnpUno {
+      font-size: 0.8em;
+      padding-left: 1em; }
+    .caja-mascotas_botones .btn-mascotasTnpDos {
+      font-size: 0.8em; }
+    @media screen and (max-width: 321px) {
+      .caja-mascotas_botones .btn-mascotasTnpUno,
+      .caja-mascotas_botones .btn-mascotasTnpDos {
+        width: 100px;
+        line-height: 0.1em; }
+      .caja-mascotas_botones .btn-mascotasTnpUno {
+        font-size: 0.6em;
+        padding: 1.3em 1.2em; }
+      .caja-mascotas_botones .btn-mascotasTnpDos {
+        font-size: 0.6em;
+        padding-top: 1.3em;
+        padding-bottom: 1.3em; } }
