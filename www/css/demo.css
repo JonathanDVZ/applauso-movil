@@ -527,3 +527,7 @@
 .fan_box h3, .fan_box h5, .fan_box p{
     color: #fff;
 }
+
+    .space{
+        padding-bottom: 17em;padding-top: 3em;
+    }
