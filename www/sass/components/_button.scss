@@ -1,9 +1,9 @@
 .btn-login {
   width: 70%;
-  line-height: 0.7em;
-  font-size: 1.4em;
+  line-height: 1em;
+  font-size: 2.6em;
   text-transform: capitalize;
-  border-radius: 12px;
+  border-radius: 18px;
   border: 2px solid #fff;
 
   &:hover,
@@ -16,8 +16,6 @@
 .btn-transparente,
 .btn-azul {
   width: 100%;
-  line-height: 0.9em;
-  font-size: 1.4em;
   text-transform: none;
   border-radius: 12px;
   border: 2px solid #fff;
@@ -32,7 +30,7 @@
 .btn-transparente,
 .btn-azul {
   line-height: 1em;
-  font-size: 1.8em;
+  font-size: 3.4em;
 }
 
 .btn-transparente {
@@ -83,4 +81,93 @@
   background: rgb(246, 12, 12) !important;
   line-height: 0.8em;
   font-weight: 400;
+}
+
+@media screen and (max-width: 601px) {
+  .btn-login {
+    width: 70%;
+    line-height: 0.7em;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    border-radius: 12px;
+    border: 2px solid #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid #fff !important;
+    }
+  }
+
+  .btn-transparente,
+  .btn-azul {
+    width: 100%;
+    line-height: 0.9em;
+    font-size: 1.4em;
+    text-transform: none;
+    border-radius: 12px;
+    border: 2px solid #fff;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border: 2px solid #fff !important;
+    }
+  }
+
+  .btn-transparente,
+  .btn-azul {
+    line-height: 1em;
+    font-size: 1.8em;
+  }
+
+  .btn-transparente {
+    background: none !important;
+  }
+
+  .btn-facebook,
+  .btn-google {
+    width: 100%;
+    text-transform: none;
+    font-size: 1.6em;
+    border-radius: 13px;
+    color: #fff !important;
+    border: none !important;
+  }
+
+  .btn-facebook {
+    background: rgb(66, 85, 167) !important;
+    font-size: 2em;
+    line-height: 0.8em;
+    font-weight: bold;
+  }
+
+  .btn-google {
+    background: rgb(246, 12, 12) !important;
+    line-height: 1em;
+    font-weight: 400;
+  }
+
+  .btn-facebook-small,
+  .btn-google-small {
+    width: 85%;
+    text-transform: none;
+    font-size: 1.4em;
+    border-radius: 13px;
+    color: #fff !important;
+    border: none !important;
+  }
+
+  .btn-facebook-small {
+    background: rgb(66, 85, 167) !important;
+    font-size: 1.8em;
+    line-height: 0.6em;
+    font-weight: bold;
+  }
+
+  .btn-google-small {
+    background: rgb(246, 12, 12) !important;
+    line-height: 0.8em;
+    font-weight: 400;
+  }
 }

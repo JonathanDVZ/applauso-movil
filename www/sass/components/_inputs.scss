@@ -3,8 +3,8 @@
 }
 
 .control-label {
-  font-size: 1.6em !important;
-  margin-top: -2px !important;
+  font-size: 3.6em !important;
+  margin-top: -0.5em !important;
 }
 
 input[type="text"],
@@ -13,6 +13,29 @@ input[type="number"],
 input[type="email"],
 input[type="date"],
 input[type="time"] {
-  font-size: 1.6em !important;
+  font-size: 3.6em !important;
   color: #fff !important;
+  margin-bottom: 1em !important;
+}
+
+@media screen and (max-width: 601px) {
+  .input-login {
+    color: var(--azul) !important;
+  }
+
+  .control-label {
+    font-size: 1.6em !important;
+    margin-top: -2px !important;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="number"],
+  input[type="email"],
+  input[type="date"],
+  input[type="time"] {
+    font-size: 1.6em !important;
+    color: #fff !important;
+    margin-bottom: 0.5em !important;
+  }
 }
