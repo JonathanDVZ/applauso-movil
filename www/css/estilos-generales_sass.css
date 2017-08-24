@@ -1566,7 +1566,6 @@ ul.reset {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
-      margin-top: 3em;
       width: 100%;
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
