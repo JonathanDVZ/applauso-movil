@@ -6,26 +6,26 @@
   overflow-x: hidden;
 }
 
+.register {
+  margin-top: 2em;
+}
+
 .footer-register {
   width: 100%;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 2em;
 }
 
 .togglebutton {
   margin-left: -2em;
-
-  @media screen and (max-width: 361px) {
-    margin-top: 0.2em;
-    margin-left: -2.3em;
-  }
 }
 
 span.toggle {
-  width: 75px !important;
-  height: 40px !important;
+  width: 115px !important;
+  height: 60px !important;
   border-radius: 50px !important;
   box-sizing: border-box;
   box-shadow: 0 0 0 2px #fff;
@@ -33,21 +33,11 @@ span.toggle {
 
   &:after {
     content: "";
-    width: 35px !important;
-    height: 35px !important;
+    width: 55px !important;
+    height: 55px !important;
     border-radius: 50px !important;
     top: 0.2em !important;
     left: 0.2em !important;
-  }
-
-  @media screen and (max-width: 321px) {
-    width: 65px !important;
-    height: 35px !important;
-
-    &:after {
-      width: 28px !important;
-      height: 28px !important;
-    }
   }
 }
 
@@ -56,30 +46,18 @@ span.toggle {
 }
 
 .togglebutton label input[type=checkbox]:checked + .toggle:after {
-  left: 38px !important;
-
-  @media screen and (max-width: 321px) {
-    left: 34px !important;
-  }
+  left: 58px !important;
 }
 
 .terminos_condiciones {
   color: #fff;
   font-weight: bold;
   margin: 0;
-  font-size: 1em;
+  font-size: 2em;
   position: absolute;
   top: 50%;
-  right: -2em;
+  right: -1em;
   transform: translateY(-50%);
-
-  @media screen and (max-width: 361px) {
-    right: -2.3em;
-  }
-
-  @media screen and (max-width: 321px) {
-    font-size: 0.9em;
-  }
 }
 
 .text-logo {
@@ -87,35 +65,130 @@ span.toggle {
   text-align: center;
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 601px) {
   .body-bg-transparenteNormal {
-    overflow-y: auto !important;
+    background: url(../img/bg-transparente.png);
+    background-size: 100vw 100%;
+    background-attachment: fixed;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 
-    &::-webkit-scrollbar {
-      width: 1px !important;
+  .register {
+    margin-top: 0;
+  }
+
+  .footer-register {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .togglebutton {
+    margin-left: -2em;
+
+    @media screen and (max-width: 361px) {
+      margin-top: 0.2em;
+      margin-left: -2.3em;
     }
   }
 
-  .form-register {
-    .content {
-      .form-group {
-        label {
-          font-size: 1.4em !important;
-        }
+  span.toggle {
+    width: 75px !important;
+    height: 40px !important;
+    border-radius: 50px !important;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 2px #fff;
+    background: none !important;
 
-        input[type="text"],
-        input[type="password"] {
-          font-size: 1em !important;
-        }
+    &:after {
+      content: "";
+      width: 35px !important;
+      height: 35px !important;
+      border-radius: 50px !important;
+      top: 0.2em !important;
+      left: 0.2em !important;
+    }
+
+    @media screen and (max-width: 321px) {
+      width: 65px !important;
+      height: 35px !important;
+
+      &:after {
+        width: 28px !important;
+        height: 28px !important;
       }
     }
   }
 
-  .btn-facebook-small {
-    font-size: 1.4em;
+  .togglebutton label input[type=checkbox]:checked + span.toggle {
+    background: rgba(12, 173, 165, 0.7) !important;
   }
 
-  .btn-google-small {
+  .togglebutton label input[type=checkbox]:checked + .toggle:after {
+    left: 38px !important;
 
+    @media screen and (max-width: 321px) {
+      left: 34px !important;
+    }
+  }
+
+  .terminos_condiciones {
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1em;
+    position: absolute;
+    top: 50%;
+    right: -2em;
+    transform: translateY(-50%);
+
+    @media screen and (max-width: 361px) {
+      right: -2.3em;
+    }
+
+    @media screen and (max-width: 321px) {
+      font-size: 0.9em;
+    }
+  }
+
+  .text-logo {
+    margin-top: -0.5em;
+    text-align: center;
+  }
+
+  @media screen and (max-width: 321px) {
+    .body-bg-transparenteNormal {
+      overflow-y: auto !important;
+
+      &::-webkit-scrollbar {
+        width: 1px !important;
+      }
+    }
+
+    .form-register {
+      .content {
+        .form-group {
+          label {
+            font-size: 1.4em !important;
+          }
+
+          input[type="text"],
+          input[type="password"] {
+            font-size: 1em !important;
+          }
+        }
+      }
+    }
+
+    .btn-facebook-small {
+      font-size: 1.4em;
+    }
+
+    .btn-google-small {
+
+    }
   }
 }
