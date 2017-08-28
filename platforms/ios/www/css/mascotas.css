@@ -1,0 +1,22 @@
+.social{
+	position: relative;
+	display: block;
+	padding: 10px 15px;
+	margin-bottom: -1px;
+	background-color: #fff;
+	}
+.social_borde{
+	border-bottom: 1px solid #0CADA5;
+}
+.social a{
+	font-size: 17px;
+	color:  #9E9E9E;
+	}
+
+.txt-nombre{
+	color: #9E9E9E;
+	}
+
+.redes-sociales{
+	background: #fff;
+	}
