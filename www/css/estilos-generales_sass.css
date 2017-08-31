@@ -1290,41 +1290,31 @@ ul.reset {
     margin-left: -3px;
     width: 63px; } }
 
-.ocultar {
-  display: none; }
+.caja-opc_eventos {
+  width: 100%; }
+  .caja-opc_eventos img {
+    margin-left: -1em;
+    width: 100vw; }
 
-.titulo-unico {
-  padding-top: 0.5em; }
-
-.detalles-padding-small {
-  padding-bottom: 1em; }
-  .detalles-padding-small .sin-raya {
-    border-bottom: none; }
-
-.evento {
-  width: 100%;
-  height: 230px;
-  position: relative; }
-  .evento img {
+.caja-opc .icon-concierto,
+.caja-opc .icon-deporte,
+.caja-opc .icon-teatro,
+.caja-opc .icon-cine,
+.caja-opc .icon-familiar,
+.caja-opc .icon-cultura {
+  width: 55px;
+  height: 50px; }
+  .caja-opc .icon-concierto img,
+  .caja-opc .icon-deporte img,
+  .caja-opc .icon-teatro img,
+  .caja-opc .icon-cine img,
+  .caja-opc .icon-familiar img,
+  .caja-opc .icon-cultura img {
     width: 100%;
     height: 100%; }
-  @media screen and (max-width: 321px) {
-    .evento {
-      height: 200px; } }
 
-.icon-nota-musical,
-.icon-balon,
-.icon-mascara,
-.icon-cine-small,
-.icon-flia-small,
-.icon-arte-small {
-  width: 44px;
-  height: 43px; }
-
-.icon-flia-small {
-  margin-left: -7px;
-  width: 50px;
-  height: 45px; }
+.list-NoBorder {
+  border-bottom: none; }
 
 .body-bg-transparente-kids {
   overflow-y: auto !important;
