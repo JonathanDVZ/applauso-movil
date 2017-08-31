@@ -1359,6 +1359,7 @@ ul.reset {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 3em;
     width: 100%;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
@@ -1566,6 +1567,7 @@ ul.reset {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
+      margin-top: 3em;
       width: 100%;
       -webkit-box-pack: start;
       -webkit-justify-content: flex-start;
@@ -2099,3 +2101,465 @@ ul.reset {
         font-size: 0.6em;
         padding-top: 1.3em;
         padding-bottom: 1.3em; } }
+
+.borderb {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 2px solid var(--azul) !important; }
+  .borderb_img {
+    margin-left: -1em; }
+  .borderb_titulo {
+    margin-left: -0.5em; }
+
+.breadcrumb_active a {
+  color: #fff !important; }
+
+.breadcrumb li a {
+  text-decoration: none !important; }
+  .breadcrumb li a:hover, .breadcrumb li a:focus {
+    text-decoration: none !important; }
+
+.datos_titulo {
+  color: #888 !important; }
+
+.datos_pDOS {
+  margin-top: -0.5em !important; }
+
+.caja-fechaCONCIERTO {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 5em; }
+  .caja-fechaCONCIERTO_banner {
+    width: 100%;
+    height: 400px;
+    margin-top: -1.5em; }
+    .caja-fechaCONCIERTO_banner img {
+      width: 100%;
+      height: 100%; }
+  .caja-fechaCONCIERTO_descargar {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: -0.6em;
+    padding: 0 0.8em; }
+    .caja-fechaCONCIERTO_descargar img {
+      width: 60px;
+      height: 55px; }
+  .caja-fechaCONCIERTO_content {
+    padding-left: 3em; }
+    .caja-fechaCONCIERTO_content .fecha {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .caja-fechaCONCIERTO_content .fecha img {
+        width: 40px;
+        height: 45px; }
+      .caja-fechaCONCIERTO_content .fecha h3 {
+        color: #777;
+        font-weight: bold;
+        margin: 0 !important;
+        font-size: 1.3em;
+        padding-left: 0.2em; }
+      .caja-fechaCONCIERTO_content .fecha p {
+        margin: 0 !important;
+        font-size: 1.2em;
+        padding-left: 2em; }
+    .caja-fechaCONCIERTO_content .locacion {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .caja-fechaCONCIERTO_content .locacion img {
+        width: 40px;
+        height: 45px; }
+      .caja-fechaCONCIERTO_content .locacion h3 {
+        color: #777;
+        font-weight: bold;
+        margin: 0 !important;
+        font-size: 1.3em;
+        padding-left: 0.2em; }
+      .caja-fechaCONCIERTO_content .locacion p {
+        margin: 0 !important;
+        font-size: 1.2em;
+        padding-left: 0.5em;
+        padding-top: 1em;
+        text-transform: capitalize !important; }
+        .caja-fechaCONCIERTO_content .locacion p a {
+          text-decoration: none; }
+          .caja-fechaCONCIERTO_content .locacion p a:hover, .caja-fechaCONCIERTO_content .locacion p a:focus {
+            text-decoration: none; }
+  .caja-fechaCONCIERTO_info {
+    width: 100%;
+    padding: 0 4em; }
+    .caja-fechaCONCIERTO_info h3 {
+      margin: 0 !important;
+      color: #777;
+      font-size: 1.5em;
+      font-weight: bold;
+      padding-left: 0.5em; }
+  .caja-fechaCONCIERTO_LineUp {
+    padding: 0 0.5em; }
+    .caja-fechaCONCIERTO_LineUp h3 {
+      color: #777;
+      margin-left: 3em !important;
+      font-size: 1.6em;
+      font-weight: bold; }
+    .caja-fechaCONCIERTO_LineUp img {
+      width: 100%; }
+    .caja-fechaCONCIERTO_LineUp h1 {
+      color: #777;
+      text-align: center;
+      font-size: 2.5em;
+      font-weight: bold; }
+  .caja-fechaCONCIERTO_limite {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 4em; }
+    .caja-fechaCONCIERTO_limite h3 {
+      color: #777;
+      font-weight: bold;
+      margin: 0 !important;
+      font-size: 1.3em;
+      padding-left: 0.2em; }
+    .caja-fechaCONCIERTO_limite p {
+      margin: 0 !important;
+      font-size: 1.3em;
+      padding-left: 2em;
+      padding-top: 1.2em; }
+  .caja-fechaCONCIERTO_acceso {
+    padding: 0 3em; }
+    .caja-fechaCONCIERTO_acceso .titulo {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .caja-fechaCONCIERTO_acceso .titulo img {
+        width: 55px;
+        height: 50px; }
+      .caja-fechaCONCIERTO_acceso .titulo h3 {
+        font-size: 1.2em;
+        margin-top: -0.1em;
+        font-weight: bold;
+        color: #777; }
+    .caja-fechaCONCIERTO_acceso p {
+      font-size: 0.9em;
+      margin-left: 4.5em;
+      margin-top: -0.5em; }
+    .caja-fechaCONCIERTO_acceso .botones {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 3em 0; }
+      .caja-fechaCONCIERTO_acceso .botones button {
+        width: 180px;
+        font-size: 1.3em; }
+
+.linea {
+  width: 80%;
+  height: 2px;
+  background: var(--azul);
+  border: none !important; }
+
+@media screen and (min-width: 767px) {
+  .borderb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-bottom: 2px solid var(--azul) !important;
+    padding-bottom: 0.5em; }
+    .borderb_img {
+      width: 100px;
+      height: 100px;
+      margin-left: -1em; }
+      .borderb_img img {
+        width: 100%;
+        height: 100%; }
+    .borderb_titulo {
+      margin-left: -0.5em;
+      font-size: 3em; }
+  .breadcrumb {
+    height: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 3em !important; }
+    .breadcrumb_active a {
+      color: #fff !important; }
+    .breadcrumb li {
+      height: 100px !important; }
+    .breadcrumb li a {
+      font-size: 3em;
+      text-decoration: none !important;
+      height: 100px !important; }
+      .breadcrumb li a:hover, .breadcrumb li a:focus {
+        text-decoration: none !important; }
+  .fechaCALENDAR {
+    padding-bottom: 1em; }
+    .fechaCALENDAR h4 {
+      font-size: 5em; }
+    .fechaCALENDAR p {
+      font-size: 3em; }
+  .datos_titulo {
+    color: #888 !important;
+    font-size: 2.5em !important; }
+  .datos_pUNO {
+    margin-top: 0.2em !important;
+    font-size: 2.5em !important; }
+  .datos_pDOS {
+    margin-top: 0.5em !important;
+    font-size: 2.5em !important; }
+  .caja-fechaCONCIERTO {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5em; }
+    .caja-fechaCONCIERTO_banner {
+      width: 100%;
+      height: 800px;
+      margin-top: -1.5em; }
+      .caja-fechaCONCIERTO_banner img {
+        width: 100%;
+        height: 100%; }
+    .caja-fechaCONCIERTO_descargar {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: end;
+      -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+      justify-content: flex-end;
+      margin-top: -0.6em;
+      padding: 0 0.8em; }
+      .caja-fechaCONCIERTO_descargar img {
+        width: 100px;
+        height: 95px; }
+    .caja-fechaCONCIERTO_content {
+      padding-left: 3em; }
+      .caja-fechaCONCIERTO_content .fecha {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .caja-fechaCONCIERTO_content .fecha img {
+          width: 100px;
+          height: 105px;
+          margin-left: 3em; }
+        .caja-fechaCONCIERTO_content .fecha h3 {
+          color: #777;
+          font-weight: bold;
+          margin: 0 !important;
+          font-size: 2.8em;
+          padding-left: 0.2em; }
+        .caja-fechaCONCIERTO_content .fecha p {
+          margin: 0 !important;
+          font-size: 2.7em;
+          padding-left: 1.9em; }
+      .caja-fechaCONCIERTO_content .locacion {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: start;
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .caja-fechaCONCIERTO_content .locacion img {
+          width: 100px;
+          height: 105px;
+          margin-left: 3em; }
+        .caja-fechaCONCIERTO_content .locacion h3 {
+          color: #777;
+          font-weight: bold;
+          margin: 0 !important;
+          font-size: 2.8em;
+          padding-left: 0.2em; }
+        .caja-fechaCONCIERTO_content .locacion p {
+          margin: 0 !important;
+          font-size: 2.7em;
+          padding-left: 0.5em;
+          padding-top: 1em;
+          line-height: 20pt;
+          text-transform: capitalize !important; }
+          .caja-fechaCONCIERTO_content .locacion p a {
+            text-decoration: none; }
+            .caja-fechaCONCIERTO_content .locacion p a:hover, .caja-fechaCONCIERTO_content .locacion p a:focus {
+              text-decoration: none; }
+    .caja-fechaCONCIERTO_info {
+      width: 100%;
+      padding: 0 8em; }
+      .caja-fechaCONCIERTO_info h3 {
+        margin: 0 !important;
+        color: #777;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding-left: 0.5em; }
+      .caja-fechaCONCIERTO_info p {
+        line-height: 20pt;
+        font-size: 1.8em; }
+    .caja-fechaCONCIERTO_LineUp {
+      padding: 0 0.5em; }
+      .caja-fechaCONCIERTO_LineUp h3 {
+        color: #777;
+        margin-left: 3em !important;
+        font-size: 2.6em;
+        font-weight: bold; }
+      .caja-fechaCONCIERTO_LineUp img {
+        width: 100%; }
+      .caja-fechaCONCIERTO_LineUp h1 {
+        color: #777;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bold; }
+    .caja-fechaCONCIERTO_limite {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding-left: 8em; }
+      .caja-fechaCONCIERTO_limite h3 {
+        color: #777;
+        font-weight: bold;
+        margin: 0 !important;
+        font-size: 3.3em;
+        padding-left: 0.2em; }
+      .caja-fechaCONCIERTO_limite p {
+        margin: 0 !important;
+        font-size: 3.3em;
+        padding-left: 1em;
+        line-height: 1em;
+        padding-top: 1em; }
+    .caja-fechaCONCIERTO_acceso {
+      padding: 0 8em; }
+      .caja-fechaCONCIERTO_acceso .titulo {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .caja-fechaCONCIERTO_acceso .titulo img {
+          width: 105px;
+          height: 100px; }
+        .caja-fechaCONCIERTO_acceso .titulo h3 {
+          font-size: 3.2em;
+          margin-top: -0.1em;
+          font-weight: bold;
+          color: #777; }
+      .caja-fechaCONCIERTO_acceso p {
+        font-size: 2em;
+        line-height: 1em;
+        margin-left: 3.8em;
+        margin-top: -0.5em; }
+      .caja-fechaCONCIERTO_acceso .botones {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 3em 0; }
+        .caja-fechaCONCIERTO_acceso .botones button {
+          width: 300px;
+          font-size: 2.3em; }
+  .linea {
+    width: 80%;
+    height: 2px;
+    background: var(--azul);
+    border: none !important; } }
