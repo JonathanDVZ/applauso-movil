@@ -38,6 +38,139 @@
   }
 }
 
+.caja-concierto {
+  width: 100%;
+  height: 100vh;
+  background: #f5f5f5;
+  padding: 1.5em;
+
+  &_cabecera {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid var(--azul);
+
+    .logo {
+      width: 55px;
+      height: 50px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h3 {
+      margin: 0;
+      padding-left: 0.6em;
+    }
+  }
+
+  &_buscador {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5em;
+
+    label {
+      color: #444;
+      font-weight: bold;
+      font-size: 1.4em;
+      margin-left: 0.5em;
+    }
+
+    .buscar {
+      width: 100%;
+
+      input {
+        border: none;
+        outline: none;
+        border-radius: none;
+        width: 85%;
+        height: 40px;
+        padding: 0.5em 1em;
+      }
+
+      button {
+        border: none;
+        border-radius: none;
+        outline: none;
+        background: #0e6565;
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        padding: 0.5em;
+      }
+    }
+  }
+
+  &_boton {
+    padding: 0.5em 3em;
+
+     button {
+       font-size: 1.6em;
+     }
+  }
+
+  &_lista {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 6em;
+
+    li {
+      background: #fff;
+      display: flex;
+      height: 150px;
+      margin-bottom: 1em;
+
+      .miniatura {
+        width: 150px;
+        height: 150px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .contenido {
+        margin-left: 0.5em;
+        padding: 0.5em 1em;
+
+        h4,
+        h5 {
+          color: var(--azul);
+          margin: 0;
+        }
+
+        p {
+          margin: 0;
+          font-size: 0.8em;
+        }
+
+        h4 {
+          font-weight: bold;
+          font-size: 1em;
+        }
+
+        h5 {
+          font-size: 1em;
+        }
+
+        button {
+          margin-top: 0;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          font-size: 0.8em;
+          padding: 0;
+          width: 100px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
 .caja-fechaCONCIERTO {
   width: 100%;
   height: 100%;
