@@ -111,6 +111,7 @@
     padding: 0.5em 3em;
 
      button {
+       background: #0CADA5 !important;
        font-size: 1.6em;
      }
   }
@@ -170,7 +171,8 @@
             margin-top: 0;
             font-size: 0.8em;
             padding: 0;
-            width: 100px;
+            background: #0CADA5 !important;
+            width: 75px;
             height: 20px;
           }
         }

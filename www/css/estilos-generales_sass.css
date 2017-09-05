@@ -2193,6 +2193,7 @@ ul.reset {
   .caja-concierto_boton {
     padding: 0.5em 3em; }
     .caja-concierto_boton button {
+      background: #0CADA5 !important;
       font-size: 1.6em; }
   .caja-concierto_lista {
     width: 100%;
@@ -2245,7 +2246,8 @@ ul.reset {
             margin-top: 0;
             font-size: 0.8em;
             padding: 0;
-            width: 100px;
+            background: #0CADA5 !important;
+            width: 75px;
             height: 20px; }
 
 .caja-fechaCONCIERTO {
