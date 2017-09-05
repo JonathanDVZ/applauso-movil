@@ -252,7 +252,8 @@ body {
     font-size: 1.3em; }
   .social {
     display: block;
-    margin-top: 1em; } }
+    margin-top: 1em;
+    width: 200px; } }
 
 .btn-login {
   width: 70%;
@@ -773,7 +774,8 @@ input[type="time"] {
   align-items: center; }
 
 .caja-rg-entrar {
-  margin-top: 2em; }
+  margin-top: 2em;
+}
 
 @media screen and (max-width: 601px) {
   .body-bg {
@@ -799,7 +801,9 @@ input[type="time"] {
     -ms-flex-align: center;
     align-items: center; }
   .caja-rg-entrar {
-    margin-top: 2em; } }
+    margin-top: 2em; 
+    width: 250px;
+    } }
 
 @media screen and (max-width: 601px) and (max-width: 321px) {
   .body-bg,

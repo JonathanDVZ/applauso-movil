@@ -234,6 +234,28 @@
 @media screen and (min-width: 991px){
     .lightbox .modal-dialog{
         width: 960px;
+    }  
+}
+@media (min-width: 1024px){
+    .cont_sticker{
+        min-height: 550px;
+    }
+    .cont_sticker h3, .fondo_perfil h3{
+        font-size: 2.5em;
+    }
+    .cont_sticker h4{
+        font-size: 2em;
+    }
+}
+@media (max-width: 600px){
+    .cont_sticker h3{
+        font-size: 1em;
+    }
+    .cont_sticker h4{
+        font-size: 1.1em;
+    }
+    .cont_sticker{
+        min-height: 500px;
     }
 }
 @media (max-width: 991px){
@@ -251,6 +273,12 @@
         margin-top: 0;
         font-size: 60px;
         width: 270px;
+    }
+    .cont_sticker h3{
+        font-size: 1.6em;
+    }
+    .cont_sticker h4{
+        font-size: 1.1em;
     }
 }
 
@@ -470,6 +498,7 @@
 }
 .fondo_perfil h3{
    color: #fff;
+   margin-top: .5em !important;
 }
 
 .cont_perfil p{
@@ -485,15 +514,14 @@
 
 .cont_scanner, .cont_sticker{
     background-color: #155353;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .cont_scanner{
     padding: 2em;
 }
 .cont_sticker{
-    min-height: 500px;
     padding-top: 4em;
     margin-bottom: -1em;
 }
