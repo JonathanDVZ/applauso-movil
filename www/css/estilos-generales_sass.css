@@ -150,7 +150,7 @@ background: var(--azul);
 color: var(--azul);
 */
 :root {
-  --azul: #0cada5;
+  --azul: #0CADA5;
   --claro-verde: #32ac87;
   --Mdark-verde: #0e6565;
   --dark-verde: #1c3e3e;
@@ -2153,6 +2153,9 @@ ul.reset {
       .caja-concierto_cabecera .logo img {
         width: 100%;
         height: 100%; }
+    .caja-concierto_cabecera .logo-familiar {
+      width: 65px;
+      height: 50px; }
     .caja-concierto_cabecera h3 {
       margin: 0;
       padding-left: 0.6em; }
@@ -2173,28 +2176,29 @@ ul.reset {
       font-size: 1.4em;
       margin-left: 0.5em; }
     .caja-concierto_buscador .buscar {
-      width: 100%; }
+      width: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
       .caja-concierto_buscador .buscar input {
         border: none;
         outline: none;
         border-radius: none;
-        width: 85%;
+        width: 90%;
         height: 40px;
         padding: 0.5em 1em; }
-      .caja-concierto_buscador .buscar button {
-        border: none;
-        border-radius: none;
-        outline: none;
-        background: #0e6565;
-        color: #fff;
-        width: 40px;
-        height: 40px;
-        padding: 0.5em; }
+      .caja-concierto_buscador .buscar .btn-buscador {
+        width: 45px;
+        height: 40px; }
+        .caja-concierto_buscador .buscar .btn-buscador img {
+          width: 100%;
+          height: 100%; }
   .caja-concierto_boton {
     padding: 0.5em 3em; }
     .caja-concierto_boton button {
       background: #0CADA5 !important;
-      font-size: 1.6em; }
+      font-size: 1.4em; }
   .caja-concierto_lista {
     width: 100%;
     overflow: hidden;
@@ -2332,9 +2336,11 @@ ul.reset {
         padding-top: 1em;
         text-transform: capitalize !important; }
         .caja-fechaCONCIERTO_content .locacion p a {
-          text-decoration: none; }
+          text-decoration: none;
+          color: #7FBFE7 !important; }
           .caja-fechaCONCIERTO_content .locacion p a:hover, .caja-fechaCONCIERTO_content .locacion p a:focus {
-            text-decoration: none; }
+            text-decoration: none;
+            color: #7FBFE7 !important; }
   .caja-fechaCONCIERTO_info {
     width: 100%;
     padding: 0 4em; }
