@@ -249,7 +249,7 @@
         font-size: 1em;
     }
     .cont_sticker, .cont_scanner h4{
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
     .cont_sticker{
         min-height: 500px;
@@ -270,12 +270,6 @@
         margin-top: 0;
         font-size: 60px;
         width: 270px;
-    }
-    .cont_sticker h3{
-        font-size: 1.6em;
-    }
-    .cont_sticker h4{
-        font-size: 1.1em;
     }
 }
 
