@@ -426,13 +426,13 @@ input[type="time"] {
   overflow-x: hidden;
   overflow-y: hidden;
   position: relative;
+  height: 100vh;
   margin-top: 5em;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(94, 186, 156, 0.8)), color-stop(30%, rgba(94, 186, 156, 0.8)), color-stop(90%, rgba(205, 189, 112, 0.8)), to(rgba(205, 189, 112, 0.8)));
   background: -webkit-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background: -o-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background-repeat: no-repeat;
-  background-size: 100vw 100%;
   background-attachment: fixed; }
 
 .caja {
@@ -537,13 +537,13 @@ input[type="time"] {
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
+    height: 100vh;
     margin-top: 5em;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(94, 186, 156, 0.8)), color-stop(30%, rgba(94, 186, 156, 0.8)), color-stop(90%, rgba(205, 189, 112, 0.8)), to(rgba(205, 189, 112, 0.8)));
     background: -webkit-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
     background: -o-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
     background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
     background-repeat: no-repeat;
-    background-size: 100vw 100%;
     background-attachment: fixed; }
   .caja {
     display: -webkit-box;
