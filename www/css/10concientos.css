@@ -14,9 +14,10 @@
 		    border-top: 1px solid #eee;
 		}
 
-		.caja-fechaCONCIERTO_limite span{
-			font-size: 1em;
+		.caja-fechaCONCIERTO_limite p{
+			font-size: 0.9em;
 			color: #95989a;
+			padding: 0;
 		}
 		.caja-fechaCONCIERTO_limite h3{
 			font-size: 1.3em;
@@ -28,17 +29,17 @@
 			background: #d9d9d9;
 		}
 
-		.txt-disable h4{
+		.txt-disable h5{
 			margin: 5px;
-			font-size: 1.8em;
+			font-size: 1.5em;
 			font-weight: 600;
 			color: #989a9c;
 
 		}
 
-		.opc-pagos h4{
+		.opc-pagos h5{
 			margin: 5px;
-			font-size: 1.8em;
+			font-size: 1.5em;
 			font-weight: 600;
 			color: #989a9c;
 
@@ -58,9 +59,9 @@
 
 		}
 
-		.txt-platino h3{
+		.txt-platino h5{
 			margin: 5px;
-			font-size: 1.8em;
+			font-size: 1.5em;
 			font-weight: 600;
 			color: #989a9c;
 		}
