@@ -425,12 +425,14 @@ input[type="time"] {
 .body-bg-transparente {
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 100%;
-  height: 100vh;
+  position: relative;
+  margin-top: 5em;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(94, 186, 156, 0.8)), color-stop(30%, rgba(94, 186, 156, 0.8)), color-stop(90%, rgba(205, 189, 112, 0.8)), to(rgba(205, 189, 112, 0.8)));
   background: -webkit-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background: -o-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
   background-attachment: fixed; }
 
 .caja {
@@ -450,6 +452,12 @@ input[type="time"] {
   padding: 8em 0; }
 
 .xD {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -462,9 +470,7 @@ input[type="time"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center;
-  margin-top: 5.5em;
-  margin-bottom: 2em; }
+  align-items: center; }
 
 .caja-manilla {
   display: -webkit-box;
@@ -530,12 +536,14 @@ input[type="time"] {
   .body-bg-transparente {
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 100%;
-    height: 100vh;
+    position: relative;
+    margin-top: 5em;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(94, 186, 156, 0.8)), color-stop(30%, rgba(94, 186, 156, 0.8)), color-stop(90%, rgba(205, 189, 112, 0.8)), to(rgba(205, 189, 112, 0.8)));
     background: -webkit-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
     background: -o-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
     background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100%;
     background-attachment: fixed; }
   .caja {
     display: -webkit-box;
@@ -552,6 +560,25 @@ input[type="time"] {
     -ms-flex-align: center;
     align-items: center;
     padding: 8em 0; }
+  .xD {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .caja-manilla {
     display: -webkit-box;
     display: -webkit-flex;
