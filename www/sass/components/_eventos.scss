@@ -1,0 +1,29 @@
+.caja-opc {
+  &_eventos {
+    width: 100%;
+
+    img {
+      margin-left: -1em;
+      width: 100vw;
+    }
+  }
+
+  .icon-concierto,
+  .icon-deporte,
+  .icon-teatro,
+  .icon-cine,
+  .icon-familiar,
+  .icon-cultura {
+    width: 55px;
+    height: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.list-NoBorder {
+  border-bottom: none;
+}

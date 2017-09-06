@@ -1,0 +1,135 @@
+.body-degradado-img {
+  height: 100vh;
+  overflow-x: hidden;
+  background: url(../img/bg4.png);
+  background-position: 0 -1em;
+  background-size: 102vw 103%;
+  position: relative;
+
+  @media screen and (max-width: 321px) {
+    overflow: hidden;
+  }
+}
+
+.caja {
+  padding: 8em 0;
+  @media screen and (max-width: 321px) {
+    overflow: hidden;
+  }
+}
+
+.caja-manilla {
+  margin-top: 2em;
+}
+
+.label-codigo {
+  color: #fff;
+  font-size: 3.5em;
+  margin: 0;
+  font-weight: bold;
+}
+
+.input-codigo {
+  width: 100%;
+  height: 100px;
+  padding: 1em;
+  background: none;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 18px;
+  font-size: 2.8em !important;
+
+  &::placeholder {
+    color: #fff;
+    font-size: 1.8em !important;
+  }
+}
+
+.btn-qr {
+  margin-top: 1.5em;
+  width: 450px;
+}
+
+.text-manilla {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin-top: 2em;
+}
+
+@media screen and (max-width: 601px) {
+  .body-degradado-img {
+    height: 100vh;
+    overflow-x: hidden;
+    background: url(../img/bg4.png);
+    background-position: 0 -1em;
+    background-size: 102vw 103%;
+    position: relative;
+
+    @media screen and (max-width: 321px) {
+      overflow: hidden;
+    }
+  }
+
+  .caja {
+    padding: 8em 0;
+    @media screen and (max-width: 321px) {
+      overflow: hidden;
+    }
+  }
+
+  .caja-manilla {
+    margin-top: 2em;
+    @media screen and (max-width: 321px) {
+      overflow: hidden;
+    }
+  }
+
+  .label-codigo {
+    color: #fff;
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+
+    @media screen and (max-width: 321px) {
+      font-size: 1.5em;
+    }
+  }
+
+  .input-codigo {
+    width: 100%;
+    height: 60px;
+    padding: 0.8em;
+    background: none;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 18px;
+
+    &::placeholder {
+      color: #fff;
+      font-size: 1em !important;
+    }
+
+    @media screen and (max-width: 321px) {
+      height: 50px;
+    }
+  }
+
+  .btn-qr {
+    margin-top: 1.5em;
+    width: 300px;
+  }
+
+  .text-manilla {
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-top: 1em;
+  }
+
+  @media screen and (max-width: 321px) {
+    .btn-qr {
+      font-size: 1.2em !important;
+    }
+  }
+}
