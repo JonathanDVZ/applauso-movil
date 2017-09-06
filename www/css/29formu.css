@@ -17,7 +17,7 @@
 
         .form-control, .form-group .form-control {
           border: 0;
-          background-image: linear-gradient(#009688, #009688), linear-gradient(#009688, #009688);
+          background-image: linear-gradient(#11b5b5, #11b5b5), linear-gradient(#11b5b5, #11b5b5);
           background-size: 0 2px, 100% 1px;
           background-repeat: no-repeat;
           background-position: center bottom, center calc(100% - 1px);
