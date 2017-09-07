@@ -433,6 +433,22 @@ input[type="time"] {
   background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
   background-attachment: fixed; }
 
+.caja {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 8em 0; }
+
 .caja-manilla {
   display: -webkit-box;
   display: -webkit-flex;
@@ -497,18 +513,13 @@ input[type="time"] {
   .body-bg-transparente {
     overflow-x: hidden;
     overflow-y: hidden;
-    position: relative;
-    height: 100vh; }
-    .body-bg-transparente:before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      background: url(../img/bg-transparente.png);
-      background-size: 100vw 100vh; }
+    width: 100%;
+    height: 100vh;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, rgba(94, 186, 156, 0.8)), color-stop(30%, rgba(94, 186, 156, 0.8)), color-stop(90%, rgba(205, 189, 112, 0.8)), to(rgba(205, 189, 112, 0.8)));
+    background: -webkit-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
+    background: -o-linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
+    background: linear-gradient(rgba(94, 186, 156, 0.8) 20%, rgba(94, 186, 156, 0.8) 30%, rgba(205, 189, 112, 0.8) 90%, rgba(205, 189, 112, 0.8) 100%);
+    background-attachment: fixed; }
   .caja {
     display: -webkit-box;
     display: -webkit-flex;
