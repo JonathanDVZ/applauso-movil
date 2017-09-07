@@ -1,11 +1,12 @@
 .txt-12{
 color: #000;
-font-weight: 600;
+font-weight: 500;
+  font-size: 16px;
 }
 
 .content{
   background: #fff;
-  margin-top:25px;
+  margin-top: 0px !important;
   padding: 20px 20px;
 }
 
@@ -17,6 +18,7 @@ font-weight: 600;
 .form-group label{
   color: #000;
   font-weight: 700;
+  font-size: 16px;
 }
 
 .form-control, .form-group .form-control {

@@ -447,6 +447,10 @@
 .icon_titulo h4{
     padding-left: 1em;
 }
+.borderb_titulo h4{
+    font-size: 18px !important;
+     font-weight: 400;
+}
 .contenedor{
     padding-left: 30px;
     padding-right: 30px;
@@ -559,4 +563,7 @@
 
 .margin_1{
     margin-bottom: 1em;
+}
+.font_18{
+    font-size: 18px;
 }
