@@ -31,8 +31,8 @@
     border-bottom: 1px solid #fff;
 
     .LOGOcarita {
-      width: 65px;
-      height: 60px;
+      width: 105px;
+      height: 100px;
 
       img {
         width: 100%;
@@ -42,7 +42,7 @@
 
     .p-kids_uno {
       margin: 0;
-      font-size: 1.8em;
+      font-size: 3.8em;
       color: #fff;
     }
   }
@@ -56,8 +56,8 @@
 
     .LOGOadd {
       margin-left: 0.5em;
-      width: 45px;
-      height: 45px;
+      width: 65px;
+      height: 65px;
 
       img {
         width: 100%;
@@ -67,7 +67,7 @@
 
     .p-kids_tres {
       margin: 0;
-      font-size: 1.5em;
+      font-size: 2.5em;
       color: #fff;
       font-weight: bold;
       padding-left: 0.5em;
@@ -81,6 +81,7 @@
     h3 {
       margin: 0;
       color: #fff;
+      font-size: 2.5em;
       font-weight: bold;
       padding-bottom: 0.5em;
       border-bottom: 1px solid #fff;
@@ -95,8 +96,8 @@
       border-bottom: 1px solid #fff;
 
       &_img {
-        width: 40px;
-        height: 40px;
+        width: 60px;
+        height: 60px;
         border: 2px solid rgba(255,255,255,0.4);
         border-radius: 50%;
       }
@@ -108,7 +109,7 @@
         h1 {
           margin: 0;
           margin-left: 0.5em;
-          font-size: 1.3em;
+          font-size: 2.3em;
           color: #fff;
         }
       }
@@ -116,15 +117,15 @@
       &_puntos {
         margin: 0;
         color: #fff;
-        margin-top: 0.8em;
+        margin-top: 0.5em;
         margin-right: 0.5em;
-        font-size: 1.2em;
+        font-size: 2.2em;
       }
 
       &_mas {
         margin-left: 0.5em;
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
 
         img {
           width: 100%;
@@ -142,7 +143,7 @@
       width: 100% !important;
       text-align: left;
       line-height: 2em;
-      font-size: 1.8em;
+      font-size: 3.8em;
       font-weight: bold;
       padding-left: 0.5em;
       color: #fff;
@@ -193,102 +194,6 @@
   .input-kids {
     color: var(--azul) !important;
   }
-
-  @media screen and (max-width: 321px) {
-    padding: 2em;
-    padding-bottom: 6em;
-
-    // lista
-    &_lista {
-      margin-top: 4em;
-      padding-bottom: 0.5em;
-
-      .LOGOcarita {
-        width: 45px;
-        height: 40px;
-      }
-
-      .p-kids_uno {
-        font-size: 1.3em;
-      }
-    }
-
-    &_asignar {
-      .LOGOadd {
-        width: 30px;
-        height: 30px;
-      }
-
-      .p-kids_tres {
-        font-size: 1.3em;
-      }
-    }
-
-    &_listarea {
-      padding-bottom: 0.5em; 
-
-      h3 {
-        font-size: 1.5em;
-      }
-
-      .tareas-kids {
-        margin-top: 0.5em;
-        padding-bottom: 0.5em;
-
-        &_img {
-          width: 30px;
-          height: 30px;
-        }
-
-        &_tarea {
-          h1 {
-            font-size: 1.2em;
-          }
-        }
-
-        &_puntos {
-          font-size: 0.7em;
-          margin-top: 1.3em;
-        }
-
-        &_mas {
-          margin-left: 0.1em;
-          width: 25px;
-          height: 25px;
-        }
-      }
-    }
-
-    &_agg {
-      .btnKids {
-        font-size: 1.4em;
-      }
-    }
-
-    // agregar familia
-    &_carita {
-      margin-top: 7em;
-      width: 105px;
-      height: 100px;
-    }
-
-    h4 {
-      font-size: 1.5em;
-    }
-
-    p {
-      font-size: 1.5em;
-    }
-
-    &_add {
-      width: 60px;
-      height: 60px;
-    }
-
-    .input-kids {
-      width: 200px !important;
-    }
-  }
 }
 
 .kids-footerTAREA {
@@ -307,13 +212,330 @@
     background: none;
     color: #fff;
     line-height: 2em;
-    font-size: 1.6em;
+    font-size: 2.6em;
     border-top: 1px solid #fff;
   }
+}
 
-  @media screen and (max-width: 321px) {
+@media screen and (max-width: 601px) {
+  .body-bg-transparente-kids {
+    overflow-y: auto !important;
+    background: url(../img/bg-transparente.png);
+    background-attachment: fixed;
+    background-size: 100vw 100%;
+
+    &::-webkit-scrollbar {
+      width: 0 !important;
+      background: transparent !important;
+    }
+  }
+
+  .caja-kids {
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    padding: 3em;
+    padding-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // lista
+    &_lista {
+      display: flex;
+      margin-top: 3em;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+      padding-bottom: 1em;
+      border-bottom: 1px solid #fff;
+
+      .LOGOcarita {
+        width: 65px;
+        height: 60px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .p-kids_uno {
+        margin: 0;
+        font-size: 1.8em;
+        color: #fff;
+      }
+    }
+
+    &_asignar {
+      display: flex;
+      margin-top: 0.5em;
+      width: 100%;
+      justify-content: flex-start;
+      align-items: center;
+
+      .LOGOadd {
+        margin-left: 0.5em;
+        width: 45px;
+        height: 45px;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .p-kids_tres {
+        margin: 0;
+        font-size: 1.5em;
+        color: #fff;
+        font-weight: bold;
+        padding-left: 0.5em;
+      }
+    }
+
+    &_listarea {
+      width: 100%;
+      padding-bottom: 3em;
+
+      h3 {
+        margin: 0;
+        color: #fff;
+        font-size: 1.8em;
+        font-weight: bold;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #fff;
+      }
+
+      .tareas-kids {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1em;
+        padding-bottom: 1em;
+        border-bottom: 1px solid #fff;
+
+        &_img {
+          width: 40px;
+          height: 40px;
+          border: 2px solid rgba(255,255,255,0.4);
+          border-radius: 50%;
+        }
+
+        &_tarea {
+          display: flex;
+          align-items: center;
+
+          h1 {
+            margin: 0;
+            margin-left: 0.5em;
+            font-size: 1.3em;
+            color: #fff;
+          }
+        }
+
+        &_puntos {
+          margin: 0;
+          color: #fff;
+          margin-top: 0.8em;
+          margin-right: 0.5em;
+          font-size: 1.2em;
+        }
+
+        &_mas {
+          margin-left: 0.5em;
+          width: 30px;
+          height: 30px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+
+    &_agg {
+      width: 100%;
+
+      .btnKids {
+        margin-top: 0.5em;
+        width: 100% !important;
+        text-align: left;
+        line-height: 2em;
+        font-size: 1.8em;
+        font-weight: bold;
+        padding-left: 0.5em;
+        color: #fff;
+        background: rgba(255,255,255,0.25);
+        outline: none;
+        border: none;
+      }
+    }
+
+    // agregar familiares
+    &_carita {
+      margin-top: 5em;
+      width: 165px;
+      height: 160px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    h4 {
+      font-size: 1.9em;
+      font-weight: 100;
+      color: #fff;
+      margin: 0;
+    }
+
+    .p-kids_dos {
+      font-size: 1.9em;
+      font-weight: bold;
+      color: #fff;
+      margin: 0;
+      margin-top: 1.8em;
+    }
+
+    &_add {
+      margin-top: 1.5em;
+      width: 90px;
+      height: 90px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .input-kids {
+      color: var(--azul) !important;
+    }
+
+    @media screen and (max-width: 321px) {
+      padding: 2em;
+      padding-bottom: 6em;
+
+      // lista
+      &_lista {
+        margin-top: 4em;
+        padding-bottom: 0.5em;
+
+        .LOGOcarita {
+          width: 45px;
+          height: 40px;
+        }
+
+        .p-kids_uno {
+          font-size: 1.3em;
+        }
+      }
+
+      &_asignar {
+        .LOGOadd {
+          width: 30px;
+          height: 30px;
+        }
+
+        .p-kids_tres {
+          font-size: 1.3em;
+        }
+      }
+
+      &_listarea {
+        padding-bottom: 0.5em;
+
+        h3 {
+          font-size: 1.5em;
+        }
+
+        .tareas-kids {
+          margin-top: 0.5em;
+          padding-bottom: 0.5em;
+
+          &_img {
+            width: 30px;
+            height: 30px;
+          }
+
+          &_tarea {
+            h1 {
+              font-size: 1.2em;
+            }
+          }
+
+          &_puntos {
+            font-size: 0.7em;
+            margin-top: 1.3em;
+          }
+
+          &_mas {
+            margin-left: 0.1em;
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+
+      &_agg {
+        .btnKids {
+          font-size: 1.4em;
+        }
+      }
+
+      // agregar familia
+      &_carita {
+        margin-top: 7em;
+        width: 105px;
+        height: 100px;
+      }
+
+      h4 {
+        font-size: 1.5em;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      &_add {
+        width: 60px;
+        height: 60px;
+      }
+
+      .input-kids {
+        width: 200px !important;
+      }
+    }
+  }
+
+  .kids-footerTAREA {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: #d8d39f;
+
     .btnKidsFooter {
-      font-size: 1.2em;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+      color: #fff;
+      line-height: 2em;
+      font-size: 1.6em;
+      border-top: 1px solid #fff;
+    }
+
+    @media screen and (max-width: 321px) {
+      .btnKidsFooter {
+        font-size: 1.2em;
+      }
     }
   }
 }

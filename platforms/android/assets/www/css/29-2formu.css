@@ -1,0 +1,50 @@
+.content{
+  margin-top:25px;
+  padding: 20px 20px;
+}
+
+.form-group{
+  margin:0;
+  padding-bottom: 10px;
+}
+
+.form-group label{
+  color: #000;
+  font-weight: 700;
+}
+
+.form-control, .form-group .form-control {
+  border: 0;
+  background-image: linear-gradient(#009688, #009688), linear-gradient(#009688, #009688);
+  background-size: 0 2px, 100% 1px;
+  background-repeat: no-repeat;
+  background-position: center bottom, center calc(100% - 1px);
+  background-color: transparent;
+  transition: background 0s ease-out;
+  float: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-weight: 400;
+}
+
+.btn{
+  border-radius: 10px;
+  width: 150px;
+
+
+}
+
+.form-29,
+.form-29:active,
+.form-29:hover,
+.form-29:focus {
+  color: #0CADA5 !important;
+}
+
+.form-29:focus {
+  border-bottom: 2px solid #0cada5 !important;
+}
+
+.form-29::placeholder {
+  color: #888 !important;
+}

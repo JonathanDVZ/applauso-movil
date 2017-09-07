@@ -234,6 +234,25 @@
 @media screen and (min-width: 991px){
     .lightbox .modal-dialog{
         width: 960px;
+    }  
+}
+@media (min-width: 1024px){
+    .cont_sticker, .cont_scanner{
+        min-height: 550px;
+    }
+    .cont_sticker, .cont_scanner h3, .fondo_perfil h3{
+        font-size: 2.5em;
+    }
+}
+@media (max-width: 600px){
+    .cont_sticker, .cont_scanner h3{
+        font-size: 1em;
+    }
+    .cont_sticker, .cont_scanner h4{
+        font-size: 1.2em;
+    }
+    .cont_sticker{
+        min-height: 500px;
     }
 }
 @media (max-width: 991px){
@@ -428,6 +447,10 @@
 .icon_titulo h4{
     padding-left: 1em;
 }
+.borderb_titulo h4{
+    font-size: 18px !important;
+     font-weight: 400;
+}
 .contenedor{
     padding-left: 30px;
     padding-right: 30px;
@@ -470,6 +493,7 @@
 }
 .fondo_perfil h3{
    color: #fff;
+   margin-top: .5em !important;
 }
 
 .cont_perfil p{
@@ -485,15 +509,14 @@
 
 .cont_scanner, .cont_sticker{
     background-color: #155353;
-    padding-left: 70px;
-    padding-right: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .cont_scanner{
     padding: 2em;
 }
 .cont_sticker{
-    min-height: 500px;
     padding-top: 4em;
     margin-bottom: -1em;
 }
@@ -526,4 +549,21 @@
 
 .fan_box h3, .fan_box h5, .fan_box p{
     color: #fff;
+}
+
+.space{
+    padding-bottom: 17em;padding-top: 3em;
+}
+
+.input_white{
+    height: 50px;
+    text-align: center;
+    border-radius: .5em;
+}
+
+.margin_1{
+    margin-bottom: 1em;
+}
+.font_18{
+    font-size: 18px;
 }

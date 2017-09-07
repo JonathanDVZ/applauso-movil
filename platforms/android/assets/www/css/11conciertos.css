@@ -1,0 +1,39 @@
+
+
+		.caja {
+    		padding: 4em 0;
+			}
+
+			.le {
+				margin-top: -25px;
+			}
+
+.togglebutton label .toggle:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eaeaea;
+    border-radius: 20px;
+    position: relative;
+    left: -5px;
+    top: -3px;
+    border: 1px solid rgba(0,0,0, .54);
+    transition: left 0.3s ease, background 0.3s ease, box-shadow 0.1s ease;
+}
+.togglebutton label .toggle, .togglebutton label input[type=checkbox][disabled] + .toggle {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    background-color: rgba(80, 80, 80, 0.7);
+    border-radius: 15px;
+    margin-right: -19px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+}
+
+.togglebutton label h4{
+	margin-left: 25px;
+}
+

@@ -1,5 +1,12 @@
 
-input[type="text"],input[type="password"],input[type="number"], select, textarea{
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="email"],
+input[type="date"],
+input[type="time"],
+select,
+textarea{
   color: #0CADA5 !important;
 }
 ::-webkit-input-placeholder { /* Chrome */
