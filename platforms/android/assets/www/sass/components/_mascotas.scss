@@ -6,38 +6,26 @@
   padding: 4em;
   padding-bottom: 2em;
 
-  @media screen and (max-width: 321px) {
-    padding-bottom: 1.5em;
-  }
-
   &_pata {
     margin-top: 3em;
-    width: 140px;
-    height: 110px;
+    width: 240px;
+    height: 210px;
 
     img {
       width: 100%;
       height: 100%;
     }
-
-    @media screen and (max-width: 321px) {
-      width: 100px;
-      height: 70px;
-    }
   }
 
   h2 {
     margin: 0;
+    font-size: 3.5em;
     margin-top: -0.5em;
     color: #fff;
-
-    @media screen and (max-width: 321px) {
-      font-size: 2em;
-    }
   }
 
   &_sliderImg {
-    margin-top: 2em;
+    margin-top: 4em;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -49,17 +37,12 @@
       align-items: center;
 
       &_img {
-        width: 120px;
-        height: 120px;
+        width: 320px;
+        height: 320px;
 
         img {
           width: 100%;
           height: 100%;
-        }
-
-        @media screen and (max-width: 321px) {
-          width: 100px;
-          height: 100px;
         }
       }
     }
@@ -70,23 +53,15 @@
 
     .titulo {
       color: #fff;
-      font-size: 1.7em;
+      font-size: 3.7em;
       margin-top: 0.5em;
+      margin-bottom: 0.5em;
     }
 
     p {
       color: #fff;
-      font-size: 1.2em;
-    }
-
-    @media screen and (max-width: 321px) {
-      .titulo {
-        font-size: 1.4em;
-      }
-
-      p {
-        font-size: 0.9em;
-      }
+      font-size: 2em;
+      margin-top: 0.5em;
     }
   }
 
@@ -101,12 +76,8 @@
 
     p {
       color: #fff;
-      font-size: 1.2em;
+      font-size: 2.2em;
       margin: 0;
-
-      @media screen and (max-width: 321px) {
-        font-size: 0.9em;
-      }
     }
 
     .punto {
@@ -116,25 +87,16 @@
         margin: 0;
         font-weight: bold;
         color: #fff;
-        font-size: 3em;
-
-        @media screen and (max-width: 321px) {
-          font-size: 2.5em;
-        }
+        font-size: 6em;
       }
 
       .imgApplauso {
-        width: 70px;
-        height: 55px;
+        width: 120px;
+        height: 105px;
 
         img {
           width: 100%;
           height: 100%;
-        }
-
-        @media screen and (max-width: 321px) {
-          width: 60px;
-          height: 45px;
         }
       }
     }
@@ -147,39 +109,209 @@
 
     .btn-mascotasTnpUno,
     .btn-mascotasTnpDos {
-      width: 125px;
+      width: 300px;
       border: 2px solid #fff;
       color: #fff;
-      line-height: 0.2em;
+      line-height: 0.5em;
       border-radius: 50px;
       font-weight: bold !important;
     }
 
     .btn-mascotasTnpUno {
-      font-size: 0.8em;
+      font-size: 1.8em;
       padding-left: 1em;
     }
 
     .btn-mascotasTnpDos {
-      font-size: 0.8em;
+      font-size: 1.8em;
     }
+  }
+}
+
+@media screen and (max-width: 601px) {
+  .caja-mascotas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3em;
+    padding-bottom: 2em;
 
     @media screen and (max-width: 321px) {
+      padding-bottom: 1.5em;
+    }
+
+    &_pata {
+      margin-top: 3em;
+      width: 140px;
+      height: 110px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and (max-width: 321px) {
+        width: 100px;
+        height: 70px;
+      }
+    }
+
+    h2 {
+      margin: 0;
+      margin-top: -0.5em;
+      color: #fff;
+
+      @media screen and (max-width: 321px) {
+        font-size: 2em;
+      }
+    }
+
+    &_sliderImg {
+      margin-top: 2em;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .imagenes-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &_img {
+          width: 120px;
+          height: 120px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          @media screen and (max-width: 321px) {
+            width: 100px;
+            height: 100px;
+          }
+        }
+      }
+    }
+
+    &_texto {
+      text-align: center;
+
+      .titulo {
+        color: #fff;
+        font-size: 1.7em;
+        margin-top: 0.5em;
+      }
+
+      p {
+        color: #fff;
+        font-size: 1.2em;
+      }
+
+      @media screen and (max-width: 321px) {
+        .titulo {
+          font-size: 1.4em;
+        }
+
+        p {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    &_clickAqui {
+      width: 100%;
+      padding: 0 0.5em;
+    }
+
+    &_resultados {
+      text-align: center;
+      margin-top: 1em;
+
+      p {
+        color: #fff;
+        font-size: 1.2em;
+        margin: 0;
+
+        @media screen and (max-width: 321px) {
+          font-size: 0.9em;
+        }
+      }
+
+      .punto {
+        display: flex;
+
+        h1 {
+          margin: 0;
+          font-weight: bold;
+          color: #fff;
+          font-size: 3em;
+
+          @media screen and (max-width: 321px) {
+            font-size: 2.5em;
+          }
+        }
+
+        .imgApplauso {
+          width: 70px;
+          height: 55px;
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+
+          @media screen and (max-width: 321px) {
+            width: 60px;
+            height: 45px;
+          }
+        }
+      }
+    }
+
+    &_botones {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
       .btn-mascotasTnpUno,
       .btn-mascotasTnpDos {
-        width: 100px;
-        line-height: 0.1em;
+        width: 125px;
+        border: 2px solid #fff;
+        color: #fff;
+        line-height: 0.2em;
+        border-radius: 50px;
+        font-weight: bold !important;
       }
 
       .btn-mascotasTnpUno {
-        font-size: 0.6em;
-        padding: 1.3em 1.2em;
+        font-size: 0.8em;
+        padding-left: 1em;
       }
 
       .btn-mascotasTnpDos {
-        font-size: 0.6em;
-        padding-top: 1.3em;
-        padding-bottom: 1.3em;
+        font-size: 0.8em;
+      }
+
+      @media screen and (max-width: 321px) {
+        .btn-mascotasTnpUno,
+        .btn-mascotasTnpDos {
+          width: 100px;
+          line-height: 0.1em;
+        }
+
+        .btn-mascotasTnpUno {
+          font-size: 0.6em;
+          padding: 1.3em 1.2em;
+        }
+
+        .btn-mascotasTnpDos {
+          font-size: 0.6em;
+          padding-top: 1.3em;
+          padding-bottom: 1.3em;
+        }
       }
     }
   }

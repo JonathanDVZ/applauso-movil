@@ -1,0 +1,107 @@
+			.caja-fechaCONCIERTO_limite{
+				display: flex;
+				justify-content: space-between;
+				align-items:center;
+
+				padding-right: 2.5em;
+				padding-left: 2.5em;
+			}
+
+		hr {
+		    margin-top: 3px;
+		    margin-bottom: 20px;
+		    border: 0;
+		    border-top: 1px solid #eee;
+		}
+
+		.caja-fechaCONCIERTO_limite p{
+			font-size: 0.9em;
+			color: #95989a;
+			padding: 0;
+		}
+		.caja-fechaCONCIERTO_limite h3{
+			font-size: 1.3em;
+			color: #95989a;
+		}
+
+		.txt-disable, .opc-pagos{
+			padding: 5px 30px;
+			background: #d9d9d9;
+		}
+
+		.txt-disable h5{
+			margin: 5px;
+			font-size: 1.5em;
+			font-weight: 600;
+			color: #989a9c;
+
+		}
+
+		.opc-pagos h5{
+			margin: 5px;
+			font-size: 1.5em;
+			font-weight: 600;
+			color: #989a9c;
+
+		}
+
+		.informacion .ull{
+			padding: 0;
+		}
+
+		.txt-platino{
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items:center;
+			padding: 5px 16px 5px 19px;
+			border-bottom: 2px solid #0fb5b5;
+
+		}
+
+		.txt-platino h5{
+			margin: 5px;
+			font-size: 1.5em;
+			font-weight: 600;
+			color: #989a9c;
+		}
+
+		.txt-platino p{
+			margin: 5px;
+			font-size: 1.5em;
+			font-weight: 500;
+			color: #e85a4d;
+		}
+
+		.opc-total{
+			color: #989a9c;
+
+			width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items:center;
+			padding: 3px 20px 1px 29px;
+
+		}
+
+		.opc-pago-1{
+				background: #fe9700;
+				padding: 10px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items:center;
+
+		}
+
+		.opc-pago-1 p{
+			color: #b5550f;
+			font-size: 1.2em;
+		}
+
+		.linea-1 {
+    width: 85%;
+    height: 2px;
+    background: #d9d9d9;
+    border: none !important;
+}
