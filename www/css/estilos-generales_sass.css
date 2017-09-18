@@ -3049,3 +3049,63 @@ ul.reset {
 .caja-regalarTicker_content .boton {
   margin-top: 1.5em;
   padding: 0 5em; }
+
+.bg-opcAliado {
+  background: -webkit-gradient(linear, left top, left bottom, from(#5eba9c), to(#cdbd70));
+  background: -webkit-linear-gradient(#5eba9c, #cdbd70);
+  background: -o-linear-gradient(#5eba9c, #cdbd70);
+  background: linear-gradient(#5eba9c, #cdbd70);
+  overflow-x: hidden !important; }
+
+.caja-opcAliados {
+  padding: 0 0.3em;
+  padding-bottom: 6em; }
+  .caja-opcAliados_logo {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center; }
+  .caja-opcAliados_slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 250px; }
+    .caja-opcAliados_slider img {
+      width: 100%;
+      height: 100%; }
+    .caja-opcAliados_slider .flechas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 0 2em; }
+      .caja-opcAliados_slider .flechas .izqui img,
+      .caja-opcAliados_slider .flechas .derec img {
+        width: 55px;
+        height: 55px; }
+  .caja-opcAliados_content {
+    text-align: center;
+    color: #fff; }
+    .caja-opcAliados_content p {
+      font-size: 1.6em;
+      padding-bottom: 0.5em; }
+    .caja-opcAliados_content .btnClick {
+      width: 60% !important; }
+    .caja-opcAliados_content .btnCompartir {
+      width: 50% !important;
+      font-size: 1em;
+      margin-top: 2em; }
