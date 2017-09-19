@@ -1,0 +1,38 @@
+
+			.caja-imagenes{
+				margin: 15px 0;
+				width: 100%;
+			}
+
+			
+	.alrededor{
+		width: 100%;
+		display: flex;
+		aling-items:center;
+		background: #dad9d9;
+		padding: 5px;
+	}
+
+	.alrededor h5{
+		color: #9f9e9f;
+		font-weight: 600 !important;
+		margin: 7px 5px;
+	}
+	.caja-gps h4{
+		color: #9f9e9f;
+
+	}
+	.location{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		aling-items:center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		padding: 0 15px;
+	}
+	.location .caja-description h5{
+		margin: 0;
+		margin-bottom: 5px;
+
+	}

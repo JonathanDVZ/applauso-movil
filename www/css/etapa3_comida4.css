@@ -1,0 +1,101 @@
+
+      .xd{
+        background: #fff !important;
+      }
+
+			.caja-imagenes{
+				margin: 15px 0;
+				width: 100%;
+			}
+
+			.caja-hamb{
+        position: relative;
+        margin-top: 15px;
+      }
+
+      .caja-negra{
+        background: rgba(0, 0, 0, 0.45);
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+
+      .caja-negra h4{
+        color: #fff;
+        margin: 0;
+        font-weight: 600 !important; 
+      }
+
+      .disabled{
+		background: #dad9d9;
+      	padding: 10px 20px;
+      	list-style: none;
+      	font-weight: 600;
+		color: #9f9e9f;
+
+      }
+
+      .list-ul{
+      	padding: 0;
+      }
+
+      .list-ground {
+      	
+      	list-style: none;
+      	border-bottom: 1px solid #1bb7b7;
+        padding: 5px 5px;
+      }
+
+      .list-ground img{
+        margin-left: 
+      }
+    .comentarios{
+      text-align: center;
+      padding: 10px;
+      border: 1px solid #1bb7b7;
+      margin: 10px;
+    }
+
+    .lb-comentario, label{
+      color: grey;
+      text-align: center;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    
+    .caja-naranja{
+        background: #fe9700;
+        padding: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+        margin-bottom: 71px;
+    }
+
+
+    .caja-naranja p{
+      color: #b5550f;
+      font-size: 1.2em;
+    }
+
+    .des-hambur{
+      margin-top: -20px;
+      padding: 10px 20px;
+      line-height: 1;
+    }
+    .des-hambur h5{
+      color: grey;
+      font-size: 15px;
+      font-weight: 600;
+      padding-bottom: 3px;
+      margin: 0;
+    }
+    .des-hambur p{
+      font-size: 12px;
+    }
+
+      .caja-imagenes{
+        width: 100%;
+      }

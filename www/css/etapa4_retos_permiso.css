@@ -1,0 +1,26 @@
+.xd {
+  background: #e2e2e2;
+}
+.list-group-item {
+    border: 1px solid rgba(221, 221, 221, 0) !important;
+}
+
+.list-group .border1{
+  border-bottom: 2px solid #11b5b5 !important;
+}
+
+.coca-cola img{
+  margin: 0;
+  margin-top: 30px;
+}
+
+.coca-cola h6{
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: none;
+  color: grey;
+}
+.fondo-blanco{
+  background: #fff;
+  margin-bottom: 60px;
+}
