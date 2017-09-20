@@ -95,7 +95,7 @@
 /*     border-bottom: 1px solid #aaa; */
     margin: 0 auto 40px;
 }
-.txt-white{
+.txt-white, .descri h4, .navbar-transparent.navbar-small .logo-container .brand{
     color: #FFFFFF;
 }
 .txt-gray{
@@ -240,7 +240,7 @@
     .cont_sticker, .cont_scanner{
         min-height: 550px;
     }
-    .cont_sticker, .cont_scanner h3, .fondo_perfil h3{
+    .cont_sticker, .cont_scanner h3, .fondo_perfil h4{
         font-size: 2.5em;
     }
 }
@@ -323,9 +323,6 @@
 
 .navbar-default.navbar-small .logo-container .brand{
     color: #333333;
-}
-.navbar-transparent.navbar-small .logo-container .brand{
-    color: #FFFFFF;
 }
 .navbar-default.navbar-small .logo-container .brand{
     color: #333333;
@@ -491,7 +488,7 @@
 .fondo_perfil{
     background: #264747;
 }
-.fondo_perfil h3{
+.fondo_perfil h4{
    color: #fff;
    margin-top: .5em !important;
 }
@@ -566,4 +563,26 @@
 }
 .font_18{
     font-size: 18px;
+}
+.nomargin{
+    margin-right: 0px !important;
+}
+.con_perfil{
+    padding-bottom: 4em;
+}
+.descri{
+    padding-top: 2em;
+}
+.descri h4, .descri h5, .descri p{
+    margin: 0em;
+}
+.descri h5{
+    color: #0FB5B5;
+} 
+.descri p{
+    color: #FF9700;
+}
+.cabecera_perfil{
+    background: #155353;
+    padding:.5em;
 }
