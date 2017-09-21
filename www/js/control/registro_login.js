@@ -1,0 +1,1 @@
+ // crear variable de sesion ejemplo: setCookie('id_usuario','1',1);
