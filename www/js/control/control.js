@@ -37,7 +37,7 @@ function modal_wait(html,op,img){
 }
 //enviar op=1 para mostrar boton ok
 function modal_alert(html,op){
-		if(op=="1")
+		if(op=="0")
 		$("#div_boton_ok").css("display","none");
 		else
 		$("#div_boton_ok").css("display","inline-block");
