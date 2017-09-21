@@ -20,16 +20,16 @@ var ajax_timeout;
 //enviar op=1 para mostrar cargando y img=1 para mostrar img cargando 
 function modal_wait(html,op,img){
 	if(op==1){
-		if(img=="1")
-		$("#div_img_ok").css("display","none");
+		if(img=="0")
+		$("#img_ok").css("display","none");
 		else
-		$("#div_img_ok").css("display","inline-block");
+		$("#img_ok").css("display","inline-block");
 
 		$("#Modal_Loading_Body").html(html);
 		$('#Modal_Loading').modal('show');
 		ajax_timeout = setTimeout(function(){ modal_wait('',0,0); }, 50000);
 	}else{
-		$("#div_img_ok").css("display","inline-block");
+		$("#img_ok").css("display","inline-block");
 		$("#Modal_Loading_Body").html("");
 		$('#Modal_Loading').modal('hide');
 		 clearTimeout(ajax_timeout);
