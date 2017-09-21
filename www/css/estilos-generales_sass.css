@@ -164,12 +164,21 @@ body {
 
 .body-login {
   background: url(../img/bg2.png);
-  background-size: 100vw 100vh;
-  height: 100vh;
+  background-size: 100vw 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   position: relative;
   overflow-y: auto; }
   .body-login::-webkit-scrollbar {
     width: 0 !important; }
+
+.caja-absoluta {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: auto !important; }
 
 .caja-login {
   display: -webkit-box;
@@ -1331,7 +1340,7 @@ ul.reset {
 .caja-opc_eventos {
   width: 100%; }
   .caja-opc_eventos img {
-    margin-left: -1.1em;
+    margin-left: -1em;
     width: 100vw; }
 
 .caja-opc .icon-concierto,
@@ -1358,7 +1367,8 @@ ul.reset {
   overflow-y: auto !important;
   background: url(../img/bg-transparente.png);
   background-attachment: fixed;
-  background-size: 100vw 100%; }
+  background-size: 100vw 100%;
+  background-repeat: no-repeat; }
   .body-bg-transparente-kids::-webkit-scrollbar {
     width: 0 !important;
     background: transparent !important; }
@@ -3166,8 +3176,8 @@ ul.reset {
       .caja-misaplausos .parteDos ul li .left span,
       .caja-misaplausos .parteTres ul li .left span,
       .caja-misaplausos .parteCuatro ul li .left span {
-        width: 35px;
-        height: 35px;
+        width: 28px;
+        height: 28px;
         margin-right: 1em; }
         .caja-misaplausos .parteUno ul li .left span img,
         .caja-misaplausos .parteDos ul li .left span img,
@@ -3180,7 +3190,7 @@ ul.reset {
       .caja-misaplausos .parteTres ul li .left h4,
       .caja-misaplausos .parteCuatro ul li .left h4 {
         margin: 0;
-        font-size: 2.2em;
+        font-size: 1.8em;
         color: #444; }
     .caja-misaplausos .parteUno ul li .right h5,
     .caja-misaplausos .parteDos ul li .right h5,
