@@ -163,12 +163,12 @@ body {
   background: var(--blanco-grisacio); }
 
 .body-login {
-  background: url(../img/bg2.png);
-  background-size: 100vw 100%;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow-y: auto; }
+  background: url(../img/bg2.png) !important;
+  background-size: 100vw 100% !important;
+  background-attachment: fixed !important;
+  background-repeat: no-repeat !important;
+  position: relative !important;
+  overflow-y: auto !important; }
   .body-login::-webkit-scrollbar {
     width: 0 !important; }
 
@@ -1367,7 +1367,7 @@ ul.reset {
   overflow-y: auto !important;
   background: url(../img/bg-transparente.png);
   background-attachment: fixed;
-  background-size: 100vw 100%;
+  background-size: 100vw 100vh;
   background-repeat: no-repeat; }
   .body-bg-transparente-kids::-webkit-scrollbar {
     width: 0 !important;
