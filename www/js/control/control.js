@@ -40,7 +40,7 @@ function modal_alert(html,op){
 		if(op=="0")
 		$("#div_boton_ok").css("display","none");
 		else
-		$("#div_boton_ok").css("display","inline-block");
+		$("#div_boton_ok").css("display","block");
 			
 		$("#Modal_Alert_Body").html(html);
 		$('#Modal_Alert').modal('show');

@@ -38,13 +38,12 @@
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
 				<div class="col-xs-5 npadding">
-					<img src="img/recursos etapa 1-27.png" width="100%">
+					<img id="img_usu" src="" width="100%">
 				</div>
 				<div class="col-xs-7 descri">
-					<h4>Andres Cano</h4>
-					<h5>$ 500.000</h5>
-					<p>200 <img src="img/applausos.png" width="17%"></p>
-					
+					<h4 id="nom_usu"></h4>
+					<h5 id="sald_usu"></h5>
+					<p><span id="appl_usu"></span> <img src="img/applausos.png" width="17%"></p>
 				</div>
 			</div>
 		</div>
@@ -135,6 +134,18 @@
 	var validar_sesion = "true";    
 	</script>
 	<script type="text/javascript" src="js/control/control.js"></script>
+	<script>
+		window.onload = function(){
+			$("#nom_usu").text(getCookie('nomb_usu')+' '+getCookie('apel_usu'));
+			$("#sald_usu").text('$ '+getCookie('sald_usu'));
+			$("#appl_usu").text(getCookie('appl_usu'));
+			if(getCookie('imag_usu')!='http://localhost/'){
+				$("#img_usu").attr('src',''+getCookie('imag_usu')+'');
+			}else{
+				$("#img_usu").attr('src','img/recursos etapa 1-27.png');				
+			}
+		}
+	</script>
   </body>
 </html>
 
