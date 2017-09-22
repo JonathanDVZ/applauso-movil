@@ -32,21 +32,21 @@
 					<img src="img/logo_tres.png">
 				</div>
 
-				<form class="form form-register" id="contenedor" method="POST" action="">
+				<form class="form form-register" id="contenedor">
 					<div class="content">
 						<div class="form-group label-floating">
 							<label class="control-label" for="usuario">Usuario</label>
-							<input id="usuario" name="usuario" type="text" class="form-control input-login" required autocomplete="off">
+							<input id="usu" name="usu" type="email" class="form-control input-login" required autocomplete="off">
 						</div>
 						<div class="form-group label-floating">
 							<label class="control-label" for="password">Contraseña</label>
-							<input id="password" name="escritor" type="password" class="form-control" required autocomplete="off">
+							<input id="pas" name="pas" type="password" class="form-control" required autocomplete="off">
 						</div>
 					</div>
 					<div class="footer text-center">
 						<a href="#" class="olvidaste_ctñ">¿Olvidaste tu contraseña?</a>
 						<br>
-						<a href="9home_opc.html" class="btn btn-primary btn-login" type="button" name="button">Login</a>
+						<button class="btn btn-primary btn-login" type="submit" name="log" id="log">Login</button>
 					</div>
 					<div class="social text-center">
 						<a href="#"  class="margin_1"><img src="img/recursos etapa 1-08.png" width="100%"></a>
@@ -73,11 +73,18 @@
     </div>
 
 	<script type="text/javascript" src="cordova.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>	
+	<script type="text/javascript" src="js/control/control.js"></script>
 	<script>
 	//descomentar donde sea necesario validar un usuario logueado
-	//var validar_sesion = "true";    
+	//var validar_sesion = "true";
+	$(function(){
+		$('.form-register').submit(function(e){
+			e.preventDefault();
+           var data = $(".form-register").serialize();
+           login(data);
+		});
+	});
 	</script>
-	<script type="text/javascript" src="js/control/control.js"></script>
   </body>
 </html>
