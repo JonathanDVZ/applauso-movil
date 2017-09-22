@@ -21,7 +21,7 @@ window.onload = function(){
 	}else{
 		
 		 if(validar_sesion=="true" || validar_sesion==null) 
-		 //salir();
+		 salir();
 		 
 		}
 		 
