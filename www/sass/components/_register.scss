@@ -2,14 +2,6 @@
   background: #fff !important;
 }
 
-.body-bg-transparenteNormal {
-  background: url(../img/bg-transparente.png);
-  background-size: 100vw 100%;
-  background-attachment: fixed;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-
 .register {
   margin-top: 2em;
 }
@@ -70,14 +62,6 @@ span.toggle {
 }
 
 @media screen and (max-width: 601px) {
-  .body-bg-transparenteNormal {
-    background: url(../img/bg-transparente.png);
-    background-size: 100vw 100%;
-    background-attachment: fixed;
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
-
   .register {
     margin-top: 0;
   }

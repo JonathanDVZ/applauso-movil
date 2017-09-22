@@ -1002,13 +1002,6 @@ input[type="time"] {
 .fondo_blanco {
   background: #fff !important; }
 
-.body-bg-transparenteNormal {
-  background: url(../img/bg-transparente.png);
-  background-size: 100vw 100%;
-  background-attachment: fixed;
-  overflow-y: auto;
-  overflow-x: hidden; }
-
 .register {
   margin-top: 2em; }
 
@@ -1072,12 +1065,6 @@ span.toggle {
   text-align: center; }
 
 @media screen and (max-width: 601px) {
-  .body-bg-transparenteNormal {
-    background: url(../img/bg-transparente.png);
-    background-size: 100vw 100%;
-    background-attachment: fixed;
-    overflow-y: auto;
-    overflow-x: hidden; }
   .register {
     margin-top: 0; }
   .footer-register {
