@@ -15,14 +15,27 @@
     <link rel="stylesheet" href="css/estilos-generales_sass.css">
     <link rel="stylesheet" href="css/estilos_input.css">
 
+    <style media="screen">
+			body {
+				background: url(img/bg-transparente.png) !important;
+				background-size: 100vw 100vh !important;
+				background-attachment: fixed !important;
+				background-repeat: no-repeat !important;
+			  position: relative !important;
+				overflow-y: auto !important;
+			}
+		</style>
+
     <title>APPLAUSO</title>
   </head>
 
-  <body class="body-bg-transparenteNormal">
-    <div style="padding-left: .5em;padding-top: .5em;">
-      <div class="row" style="margin-right: 0px;">
-        <div class="col-xs-3">
-          <a href="3rg_entrar.html"><img src="img/arrow-left.png" width="30%;" style="padding-top: .3em;"></a>
+  <body>
+    <div class="caja-absoluta">
+      <div style="padding-left: .5em;padding-top: .5em;">
+        <div class="row" style="margin-right: 0px;">
+          <div class="col-xs-3">
+            <a href="3rg_entrar.html"><img src="img/arrow-left.png" width="30%;" style="padding-top: .3em;"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -75,9 +88,9 @@
     <script type="text/javascript" src="js/material-kit.js"></script>
     <script type="text/javascript" src="js/material.min.js"></script>
     <script type="text/javascript" src="js/nouislider.min.js"></script>
-    
 
-  <!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
+
+  <!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA -->
   <div class="app" id="deviceready">
       <div style="display:none;" class="event listening"></div>
       <div style="display:none;" class="event received"></div>
