@@ -50,7 +50,7 @@ function salir(n){
 		setCookie('fech_reg_usu','',-1);
 		setCookie('ciud_usu','',-1);
 		setCookie('sald_usu','',-1);
-		location.href='index.html';	
+		location.href='3rg_entrar.html';	
 	}else{
 		$("#Modal_Alert_Body").html('');
 		$('#Modal_Alert').modal('hide');

@@ -10,6 +10,61 @@
 	document.write('<script src="js/control/registro_login.js"></script>');
 	document.write('<script src="js/control/usuario.js"></script>');
 
+//FUNCION VALIDAR LETRAS
+function letras(eve){
+
+	key=eve.keyCode || eve.which;
+	teclado=String.fromCharCode(key).toLowerCase();
+	le=" abcdefghijklmñnopqrstuvwxyz";
+	especiales="8-37-38-46-164";
+	teclado_especial=false;
+
+    for (var i in especiales) {
+        if (key==especiales[i]) {
+            teclado_especial=true;break;
+        };
+    };
+    if (le.indexOf(teclado)==-1 && !teclado_especial) {
+        return false;
+    };
+}
+//FUNCION VALIDAR NUMEROS
+function numeros(e){
+
+    key=e.keyCode || e.which;
+    teclado=String.fromCharCode(key);
+    numero="0123456789";
+    especial="8-37-38-46";
+    tecla_especial=false;
+
+    for(var i in especial){
+        if(key==especial[i]){
+            tecla_especial=true;
+        };
+    };
+    if(numero.indexOf(teclado)==-1 && !tecla_especial){
+        return false;
+    };
+}
+//FUNCION VALIDAR NUMEROS
+function precios(e){
+
+    key=e.keyCode || e.which;
+    teclado=String.fromCharCode(key);
+    numero="0123456789.";
+    especial="8-37-38-46";
+    tecla_especial=false;
+
+    for(var i in especial){
+        if(key==especial[i]){
+            tecla_especial=true;
+        };
+    };
+    if(numero.indexOf(teclado)==-1 && !tecla_especial){
+        return false;
+    };
+}
+
 function validarNull(text){
 	if(text==null){
 		return ' ';

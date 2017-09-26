@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html leng="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+		<!--ESTILOS CSS-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/material-icons.css">
+		<link rel="stylesheet" href="css/material-kit.css">
+		<link rel="stylesheet" href="css/estilos-generales_sass.css">
+		<!-- <link rel="stylesheet" href="css/cuenta.css"> -->
+		<link rel="stylesheet" href="css/29formu.css">
+		<title>APPLAUSO</title>
+	</head>
+
+
+	<body class="fondo_blanco">
+		<div class="cabecera">
+			<div class="row nomargin">
+				<div class="col-xs-3">
+					<a href="javascript:window.history.back();"><img src="img/arrow-left.png" class="logocasa"></a>
+				</div>
+				<div class="col-xs-6">
+					<a href="9home_opc.html"><img src="img/logo.png" width="100%;"></a>
+				</div>
+				<div class="col-xs-3">
+					<a href="9home_opc.html"><img src="img/casa.png" width="100%;"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="titulo_c"><h4>Agregar tarjeta</h4></div>
+			
+		<div class="cabecera_perfil row nomargin">
+			<div class="container">
+				<div class="col-xs-5 npadding">
+					<img id="img_usu" src="" width="100%">
+				</div>
+				<div class="col-xs-7 descri">
+					<h4 id="nomape_usu"></h4>
+					<h5 id="sald_usu">$ 0,00</h5>
+					<p><span id="appl_usu">0</span> <img src="img/applausos.png" width="17%"></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row nomargin con_perfil">
+			<div class="contenedor">
+				<form  method="POST" action="">
+					<div class="content">
+						<div class="row">
+							<div class="col-xs-12 text-center">
+								<label class="txt-12" for="lb-numbertarjeta"><b>Número de la Tarjeta</b></label>
+							 </div>
+							<div class="col-xs-2 bottom" style="padding-left: 0; padding-right: 0;">
+								<img src="img/Recursos-65.png">
+							</div>
+							<div class="form-group">
+								<div class="col-xs-10" style="padding-left: 0; padding-right: 0;">
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 nro_tar" id="lb-numbertarjeta" placeholder="XXXX XXXX XXXX XXXX" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-6">
+								<div class="form-group">
+									<label for="label-color font_18 lb-expedicion">Expiración:</label>
+									<input type="text" class="form-control form-29 exp" id="lb-expedicion" placeholder="MM/AA" style="color: #0CADA5 !important;">
+								</div>
+							</div>
+
+							<div class="col-xs-6">
+								<div class="form-group">
+									<label for="label-color font_18 lb-cvv">CVV:</label>
+									<input type="text" class="form-control form-29 cvv" id="lb-cvv" placeholder="CVV" style="color: #0CADA5 !important;">
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="label-color font_18 lb-nombre">Nombre:</label>
+									<input type="text" class="form-control form-29" id="lb-nombre" placeholder="Nombre" required style="color: #0CADA5 !important;">
+								</div>
+							</div>
+						</div>
+
+						<center>
+							<button class="btn btn-primary btn-login" type="submit" name="bte" id="bte">Guardar</button>
+						</center>
+					</div>
+				</form>
+			</div>
+		</div>
+		<br><br>
+		<footer class="menu-footer">
+			<div class="row">
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="8scanner.html"><img class="menu-footer_icon" src="img/codigo-qr.png"></a>
+					<p class="menu-footer_titulo">Codigo QR</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="42misaplausos.html"><img class="menu-footer_icon" src="img/applausos-small.png"></a>
+					<p class="menu-footer_titulo">Mis aplausos</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="6sticker.html"><img class="menu-footer_icon" src="img/Recursos-15.png"></a>
+					<p class="menu-footer_titulo">GPS</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="cuenta.html"><img class="menu-footer_icon" src="img/user.png"></a>
+					<p class="menu-footer_titulo">Mi cuenta</p>
+					</div>
+				</a>
+			</div>
+		</footer>
+
+
+		<!--JAVASCRIPTs-->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+		<script type="text/javascript" src="js/material-kit.js"></script>
+		<script type="text/javascript" src="js/material.min.js"></script>
+		<script type="text/javascript" src="js/nouislider.min.js"></script>
+	
+
+	<!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
+	<div class="app" id="deviceready">
+      <div style="display:none;" class="event listening"></div>
+      <div style="display:none;" class="event received"></div>
+    </div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/jquery.payform.js"></script>
+	<script>
+	//descomentar donde sea necesario validar un usuario logueado
+	var validar_sesion = "true";    
+	</script>
+	<script type="text/javascript" src="js/control/control.js"></script>
+	<script>
+		window.onload = function(){
+			datosPerfil();
+			mes_ex();
+			ano_ex()
+		}
+		$('.nro_tar').payform('formatCardNumber');
+		$('.exp').payform('formatCardExpiry');
+		$('.cvv').payform('formatCardCVC');
+		// $('#numeric').payform('formatNumeric');		
+	</script>
+  </body>
+</html>
+
