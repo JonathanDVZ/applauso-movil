@@ -8,13 +8,21 @@
 	document.write('<script src="js/control/document_ready.js"></script>');
 	document.write('<script src="js/control/session.js"></script>');	 
 	document.write('<script src="js/control/registro_login.js"></script>');
-	 
- function imgenpordefecto(){
-	 var img = "this.src ='img/user.png'";
-	 var erroryes = 'onerror="'+img+'"';
-	 return erroryes;
-	 }
+	document.write('<script src="js/control/usuario.js"></script>');
 
+function validarNull(text){
+	if(text==null){
+		return ' ';
+	}else{
+		return text;		
+	}
+}
+	 
+function imgenpordefecto(){
+	var img = "this.src ='img/user.png'";
+	var erroryes = 'onerror="'+img+'"';
+	return erroryes;
+}
 
 var ajax_timeout;
 //enviar op=1 para mostrar cargando y img=1 para mostrar img cargando 
