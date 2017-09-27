@@ -83,11 +83,17 @@ function datosPerfil(){
 
 			$("#nom_usu").text(d.data.nomb_usu);
 			$("#ape_usu").text(d.data.apel_usu);
-			var s1 = d.data.fech_nac_usu.split('T04');
-			var fec = s1[0];
-			$("#fec_nac").text(fec);
-			$("#doc_ide").text(d.data.iden_usu);
-			$("#ciu_usu").text(d.data.ciud_usu);
+			if(d.data.fech_nac_usu != null){
+				var s1 = d.data.fech_nac_usu.split('T04');
+				var fec = s1[0];
+				$("#fec_nac").text(fec);
+			}
+			if(d.data.iden_usu != null){
+				$("#doc_ide").text(d.data.iden_usu);
+			}
+			if(d.data.ciud_usu!=null){
+				$("#ciu_usu").text(d.data.ciud_usu);
+			}
 			
 			if(d.data.sexo_usu != null){
 				if(d.data.sexo_usu=='m' || d.data.sexo_usu=='M'){
@@ -113,9 +119,11 @@ function obtenerDatos(){
 			$('#ape').val(d.data.apel_usu);
 			$('#cor').val(d.data.corr_usu);
 			$('#tlf').val(d.data.telf_usu);
+			if(d.data.fech_nac_usu != null){
 			var s1 = d.data.fech_nac_usu.split('T04');
 			var fec = s1[0];
 			$('#fec').val(fec);
+			}
 			$('#idu').val(d.data.iden_usu);
 			$('#code_pai').val(d.data.code_pai);
 			$('#ciu').val(d.data.ciud_usu);
