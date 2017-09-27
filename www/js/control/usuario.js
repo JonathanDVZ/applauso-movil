@@ -161,8 +161,8 @@ function editTarjeta(datos){
 			modal_wait('',0,0);
 			console.log(d);
 			if(d.r==true){
-				// modal_alert('Registro Editado',1);
-				$('#formTar')[0].reset();
+				modal_alert(d.msj,1);
+				obTarjeta(d.code_tar);
 			}else{
 				modal_alert(d.msj,1);
 			}
