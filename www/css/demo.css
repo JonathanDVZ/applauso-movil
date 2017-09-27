@@ -597,6 +597,9 @@ a:hover{
     background: #155353;
     padding:.5em;
 }
+.con_cuenta{
+    padding-bottom: 5em;
+}
 .con_cuenta h4{
     padding-bottom: .5em;
     padding-left: 1em;
@@ -617,4 +620,9 @@ a:hover{
 .txt-12{
     color: #000;
     font-weight: 600;
+}
+
+.table_tickets tr th, .table_tickets tr td{
+    text-align: center;
+    font-size: 20px;
 }
