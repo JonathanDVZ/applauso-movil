@@ -609,6 +609,10 @@ a:hover{
     padding-left: 1em;
     color: #333;
 }
+.cont_cuenta{
+    padding-right: 60px;
+    padding-left: 60px;
+}
 
 .titulo_c{
     color: #fff;
@@ -624,9 +628,6 @@ a:hover{
 .txt-12{
     color: #000;
     font-weight: 600;
-}
-.table_tickets{
-    border-bottom: 2px solid #155353 !important;
 }
 .table_tickets tr th, .table_tickets tr td{
     text-align: center;
