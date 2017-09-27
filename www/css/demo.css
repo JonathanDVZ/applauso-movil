@@ -237,7 +237,7 @@ a:hover{
 @media screen and (min-width: 991px){
     .lightbox .modal-dialog{
         width: 960px;
-    }  
+    }
 }
 @media (min-width: 1024px){
     .cont_sticker, .cont_scanner{
@@ -416,7 +416,15 @@ a:hover{
 }
 
 .cabecera{
-    background:#0E6565;padding:.5em;
+    overflow-x: hidden !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: auto;
+    background: #0E6565;
+    padding: .5em;
+    z-index: 50;
 }
 
 .fondo_gris{
@@ -581,7 +589,7 @@ a:hover{
 }
 .descri h5{
     color: #0FB5B5;
-} 
+}
 .descri p{
     color: #FF9700;
 }
@@ -613,6 +621,7 @@ a:hover{
     color: #000;
     font-weight: 600;
 }
+
 .table_tickets tr th, .table_tickets tr td{
     text-align: center;
     font-size: 20px;
