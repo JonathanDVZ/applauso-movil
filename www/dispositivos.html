@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html leng="es">
+	<head>
+		<meta charset="utf-8">
+		<meta name="format-detection" content="telephone=no">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+		<!--ESTILOS CSS-->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/demo.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/material-icons.css">
+		<link rel="stylesheet" href="css/material-kit.css">
+		<link rel="stylesheet" href="css/estilos-generales_sass.css">
+		<link rel="stylesheet" href="css/cuenta.css">
+		<title>APPLAUSO</title>		
+  </head>
+
+
+	<body class="fondo_blanco">
+		<div class="cabecera">
+		  <div class="row nomargin">
+			<div class="col-xs-3">
+			  <a href="javascript:window.history.back();"><img src="img/arrow-left.png" class="logocasa"></a>
+			</div>
+			<div class="col-xs-6">
+			  <a href="9home_opc.html"><img src="img/logo.png" width="100%;"></a>
+			</div>
+			<div class="col-xs-3">
+			  <a href="9home_opc.html"><img src="img/casa.png" width="100%;"></a>
+			</div>
+		  </div>
+		</div>
+		
+		<div class="titulo_c"><h4>Pagos</h4></div>
+				
+		<div class="cabecera_perfil row nomargin">
+			<div class="container">
+				<div class="col-xs-5 npadding">
+					<img id="img_usu" src="" width="100%">
+				</div>
+				<div class="col-xs-7 descri">
+					<h4 id="nomape_usu"></h4>
+					<h5 id="sald_usu">$ 0,00</h5>
+					<p><span id="appl_usu">0</span> <img src="img/applausos.png" width="17%"></p>
+				</div>
+			</div>
+		</div>
+
+		<ul class="list-group">
+			<li class="list-group-item disabled"><b>Activar manilla</b></li>
+			<div class="cont_cuenta">
+				<center>
+					<form>
+						<h5 class="text-left"><b>Escribir serial</b></h5>
+						<input class="input-codigo text-center" type="text" id="codigo" placeholder="Éscribir serial" style="border: 2px solid #ddd;">
+						<br>
+						<br>
+						<a href="8scanner.html"><img src="imgs/Sin título-1-37.png" width="100%"></a>
+						<br>
+						<br>
+						<a href="2manilla.html"><img src="imgs/Sin título-1-38.png" width="100%"></a>
+					</form>
+				</center>
+			</div>
+		</ul>
+
+		<ul class="list-group">
+			<li class="list-group-item disabled"><b>Clave pagos</b></li>
+			<div class="cont_cuenta">
+				<center>
+					<form>
+						<br>
+						<a href="19clave.html"><img src="imgs/Sin título-1-42.png" width="100%"></a>
+						<br>
+						<br>
+						<a href="editarContra.html"><img src="imgs/Sin título-1-39.png" width="100%"></a>
+					</form>
+				</center>
+			</div>
+		</ul>
+
+		<ul class="list-group">
+			<li class="list-group-item disabled"><b>Reportar manilla</b></li>
+			<div class="cont_cuenta">
+				<center>
+					<form>
+						<br>
+						<a href="2manilla.html"><img src="imgs/Sin título-1-40.png" width="100%"></a>
+						<br>
+					</form>
+				</center>
+			</div>
+		</ul>
+
+		<ul class="list-group">
+			<li class="list-group-item disabled"><b>Atención al Cliente</b></li>
+			<div class="cont_cuenta">
+				<center>
+					<form>
+						<br>
+						<a href=""><img src="imgs/Sin título-1-41.png" width="100%"></a>
+						<br>
+					</form>
+				</center>
+			</div>
+		</ul>
+		<br><br><br>
+		
+		<footer class="menu-footer">
+			<div class="row">
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="8scanner.html"><img class="menu-footer_icon" src="img/codigo-qr.png"></a>
+					<p class="menu-footer_titulo">Codigo QR</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="42misaplausos.html"><img class="menu-footer_icon" src="img/applausos-small.png"></a>
+					<p class="menu-footer_titulo">Mis aplausos</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="6sticker.html"><img class="menu-footer_icon" src="img/Recursos-15.png"></a>
+					<p class="menu-footer_titulo">GPS</p>
+					</div>
+				</a>
+				<a href="#">
+					<div class="menu-footer_caja col-xs-3">
+					<a href="cuenta.html"><img class="menu-footer_icon" src="img/user.png"></a>
+					<p class="menu-footer_titulo">Mi cuenta</p>
+					</div>
+				</a>
+			</div>
+		</footer>
+
+	<!--JAVASCRIPTs-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="js/material-kit.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
+	<script type="text/javascript" src="js/nouislider.min.js"></script>
+
+	<!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
+	<div class="app" id="deviceready">
+      <div style="display:none;" class="event listening"></div>
+      <div style="display:none;" class="event received"></div>
+    </div>
+
+	<script type="text/javascript" src="cordova.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script>
+	//descomentar donde sea necesario validar un usuario logueado
+	var validar_sesion = "true";    
+	</script>
+	<script type="text/javascript" src="js/control/control.js"></script>
+	<script>
+		window.onload = function(){
+			datosPerfil();
+			obtenerTarjetas();
+		}
+	</script>
+  </body>
+</html>
