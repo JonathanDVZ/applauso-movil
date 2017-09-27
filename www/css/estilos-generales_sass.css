@@ -857,26 +857,16 @@ input[type="time"] {
   overflow-x: hidden;
   overflow-y: auto; }
 
+.caja-opc_parati {
+  margin-bottom: 70px; }
+
 .caja-opc_comunidad {
-  margin-top: 4em;
   width: 100%;
   height: 25vh;
   background: -webkit-gradient(linear, left top, left bottom, from(var(--TranspVerde)), to(var(--TranspPastel)));
   background: -webkit-linear-gradient(var(--TranspVerde), var(--TranspPastel));
   background: -o-linear-gradient(var(--TranspVerde), var(--TranspPastel));
   background: linear-gradient(var(--TranspVerde), var(--TranspPastel)); }
-  @media screen and (min-width: 799px) {
-    .caja-opc_comunidad {
-      margin-top: 6em !important; } }
-  @media screen and (min-width: 767px) {
-    .caja-opc_comunidad {
-      margin-top: 7.5em !important; } }
-  @media screen and (min-width: 599px) {
-    .caja-opc_comunidad {
-      margin-top: 5.5em; } }
-  @media screen and (max-width: 321px) {
-    .caja-opc_comunidad {
-      margin-top: 3.5em; } }
 
 .caja-opc .color-solido {
   background: var(--SolidVerde); }
