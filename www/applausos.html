@@ -14,47 +14,53 @@
 		<link rel="stylesheet" href="css/material-kit.css">
 		<link rel="stylesheet" href="css/estilos-generales_sass.css">
 		<link rel="stylesheet" href="css/cuenta.css">
-		<title>APPLAUSO</title>
-	</head>
+		<title>APPLAUSO</title>		
+  </head>
+
 
 	<body class="fondo_blanco">
 		<div class="cabecera">
-			<div class="row nomargin">
-				<div class="col-xs-3">
-					<a href="cuenta.html"><img src="img/arrow-left.png" class="logocasa"></a>
-				</div>
-				<div class="col-xs-6">
-					<a href="9home_opc.html"><img src="img/logo.png" width="100%;"></a>
-				</div>
-				<div class="col-xs-3">
-					<a href="9home_opc.html"><img src="img/casa.png" width="100%;"></a>
-				</div>
+		  <div class="row nomargin">
+			<div class="col-xs-3">
+			  <a href="javascript:window.history.back();"><img src="img/arrow-left.png" class="logocasa"></a>
 			</div>
+			<div class="col-xs-6">
+			  <a href="9home_opc.html"><img src="img/logo.png" width="100%;"></a>
+			</div>
+			<div class="col-xs-3">
+			  <a href="9home_opc.html"><img src="img/casa.png" width="100%;"></a>
+			</div>
+		  </div>
 		</div>
-
-		<div class="titulo_c"><h4>Applausos</h4></div>
+		
+		<div class="titulo_c"><h4>Pagos</h4></div>
 				
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
 				<div class="col-xs-5 npadding">
-					<img src="img/recursos etapa 1-27.png" width="100%">
+					<img id="img_usu" src="" width="100%">
 				</div>
 				<div class="col-xs-7 descri">
-					<h4>Andres Cano</h4>
-					<h5>$ 500.000</h5>
-					<p>200 <img src="img/applausos.png" width="17%"></p>
+					<h4 id="nomape_usu"></h4>
+					<h5 id="sald_usu">$ 0,00</h5>
+					<p><span id="appl_usu">0</span> <img src="img/applausos.png" width="17%"></p>
 				</div>
 			</div>
 		</div>
 
 		<ul class="list-group">
-			<li class="list-group-item disabled">Comprar applausos</li>
-			<li class="list-group-item"><i class="fa fa-plus" aria-hidden="true"></i>Añadir tarjeta</li>
-			<li class="list-group-item disabled">Regalar applausos</li>
-			<li class="list-group-item"><i class="fa fa-plus" aria-hidden="true"></i>Añadir tarjeta</li>
-			<li class="list-group-item"><i class="fa fa-plus" aria-hidden="true"></i>Añadir applausos</li>
-		</ul>
+			<li class="list-group-item disabled"><b>Comprar applausos</b></li>
+			<div class="lista_tarjetas">
+				<!-- LISTADO DE TARJETAS -->
+			</div>
+			<li class="list-group-item"><img src="imgs/Sin título-1-19.png"></i>Tarjeta</li>
 
+			<li class="list-group-item disabled"><b>Regalar applausos</b></li>
+			<li class="list-group-item"><img src="imgs/Sin título-1-19.png"></i>Tarjeta</li>
+			<li class="list-group-item"><img src="imgs/Sin título-1-19.png"></i>Añadir applausos</li>
+		</ul>
+		<br><br><br>
+		
 		<footer class="menu-footer">
 			<div class="row">
 				<a href="#">
@@ -84,14 +90,13 @@
 			</div>
 		</footer>
 
-		<!--JAVASCRIPTs-->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-		<script type="text/javascript" src="js/material-kit.js"></script>
-		<script type="text/javascript" src="js/material.min.js"></script>
-		<script type="text/javascript" src="js/nouislider.min.js"></script>
-		
+	<!--JAVASCRIPTs-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="js/material-kit.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
+	<script type="text/javascript" src="js/nouislider.min.js"></script>
 
 	<!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
 	<div class="app" id="deviceready">
@@ -106,6 +111,11 @@
 	var validar_sesion = "true";    
 	</script>
 	<script type="text/javascript" src="js/control/control.js"></script>
+	<script>
+		window.onload = function(){
+			datosPerfil();
+			obtenerTarjetas();
+		}
+	</script>
   </body>
 </html>
-

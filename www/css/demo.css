@@ -621,8 +621,13 @@ a:hover{
     color: #000;
     font-weight: 600;
 }
-
+.table_tickets{
+    border-bottom: 2px solid #155353 !important;
+}
 .table_tickets tr th, .table_tickets tr td{
     text-align: center;
     font-size: 20px;
+}
+.table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    border-top: 1px solid #155353 !important;
 }
