@@ -415,16 +415,20 @@ a:hover{
     color: #FFFFFF;
 }
 
-.cabecera{
+.cabecera-mascara,
+.cabecera {
     overflow-x: hidden !important;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: auto;
-    background: #0E6565;
     padding: .5em;
-    z-index: 9999;
+}
+
+.cabecera {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  z-index: 9999;
+  background: #0E6565;
 }
 
 .fondo_gris{
