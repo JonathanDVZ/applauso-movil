@@ -1,14 +1,24 @@
 .body-bg-transparente-kids {
+  height: 100vh !important;
   overflow-y: auto !important;
-  background: url(../img/bg-transparente.png);
+  background: url(../img/bg-transparente.png) !important;
   background-attachment: fixed;
-  background-size: 100vw 100vh;
+  background-size: 100vw 100% !important;
   background-repeat: no-repeat;
 
   &::-webkit-scrollbar {
     width: 0 !important;
     background: transparent !important;
   }
+}
+
+.absoluteKIDS {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: auto !important;
 }
 
 .caja-kids {
