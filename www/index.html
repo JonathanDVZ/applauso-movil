@@ -16,15 +16,11 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/control/control.js"></script>
       <script>
-    if(getCookie('id_usuario')!="" && ('id_usuario')!=null && getCookie('id_usuario')!="null")
-    {
-    setTimeout("location.href='9home_opc.html';",3000);
-    
+    if(getCookie('id_usuario')!="" && ('id_usuario')!=null && getCookie('id_usuario')!="null"){
+      setTimeout("location.href='9home_opc.html';",3000);
     }else{
-    setCookie('id_usuario','',-1);
-    setTimeout("location.href ='3rg_entrar.html';",3000);
-    
-     }
+      setTimeout(function(){salir(1);},3000);
+    }
     </script>  
     
     <title>APPLAUSO</title>

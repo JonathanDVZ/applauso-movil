@@ -34,15 +34,12 @@
 			</div>
 		</div>
 
-		<div class="titulo_c"><h4>Editar Perfil</h4></div>
+		<div class="titulo_c"><h4>Cambiar Contraseña</h4></div>
 			
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
 				<div class="col-xs-5 npadding">
-					<img onclick="document.getElementById('img').click();" id="img_usu" src="" width="100%">
-					<div onclick="document.getElementById('img').click();" class="text-center" style="color: #fff;font-weight: bold;">
-						<small>Cambiar Imagen</small>
-					</div>
+					<img id="img_usu" src="" width="100%">					
 				</div>
 				<div class="col-xs-7 descri">
 					<h4 id="nomape_usu"></h4>
@@ -51,80 +48,50 @@
 				</div>
 			</div>
 		</div>
-		<form style="display:none;" id="formImg" name="formImg" action="" method="" enctype="multipart/form-data">
-			<input id="img" onchange="document.getElementById('btImg').click();" name="img"  type="file" accept="image/*" style="display:none;">
-			<input type="submit" id="btImg">
-		</form>
+
 		<div class="row nomargin con_perfil">
 			<div class="contenedor">
 				<form id="formEdit"  method="" action="">
 					<div class="content">
 						<div class="row">
 							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Nombres</label>
-									<input type="text" class="form-control form-29" name="nom" id="nom" style="color: #555 !important;">
+								<div class="form-group" style="padding-bottom: 20px;">
+									<label for="label-color font_18 lb-tlf">Contraseña Actual</label>
+									<div class="input-group">
+										<input type="password" class="form-control form-29" name="act_pas" id="act_pas" style="color: #555 !important;" autocomplete="off" required>
+										<span class="input-group-addon">
+											<a href="javascript:mostrarPass(1);">
+												<i class="fa fa-eye fa-lg eye_1"></i>
+											</a>
+										</span>
+									</div>
+									<div class="help-block help_act" style="color:#e45555; display:none;">Contraseña Actual Incorrecta</div>
 								 </div>
 							</div>
 							<div class="col-xs-12">
 								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Apellidos</label>
-									<input type="text" class="form-control form-29" name="ape" id="ape" style="color: #555 !important;">
+									<label for="label-color font_18 lb-tlf">Nueva Contraseña</label>
+									<div class="input-group">
+										<input type="password" class="form-control form-29" id="new_pas" style="color: #555 !important;" autocomplete="off" required minlength="5">
+										<span class="input-group-addon">
+											<a href="javascript:mostrarPass(2);">
+												<i class="fa fa-eye fa-lg eye_2"></i>
+											</a>
+										</span>
+									</div>
 								 </div>
 							</div>							
 							<div class="col-xs-12">
 								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Correo</label>
-									<input type="email" class="form-control form-29" name="cor" id="cor" style="color: #555 !important;">
+									<label for="label-color font_18 lb-tlf">Confirmar Contraseña</label>
+									<input type="password" class="form-control form-29" name="rep_pas" id="rep_pas" style="color: #555 !important;" autocomplete="off" required minlength="5">
+									<div class="help-block help_pass" style="color:#e45555; display:none;">Las Contraseña No Son Iguales</div>
 								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Télefono</label>
-									<input type="text" class="form-control form-29" name="tlf" id="tlf" style="color: #555 !important;">
-								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Fecha de nacimiento</label>
-									<input type="date" class="form-control form-29" name="fec" id="fec" style="color: #555 !important;">
-								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Documento de Identidad</label>
-									<input type="text" class="form-control form-29" name="idu" id="idu" style="color: #555 !important;">
-								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Género</label>
-									<select class="form-control form-29" name="sex" id="sex">
-										<option>-</option>
-										<option id="sexF" value="F">Femenino</option>
-										<option id="sexM" value="M">Masculino</option>
-									</select>
-								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<input type="hidden" id="code_pai">
-									<label for="label-color font_18 lb-tlf">País</label>
-									<select class="form-control form-29" name="pai" id="pai">
-										<option>-</option>
-									</select>
-								 </div>
-							</div>
-							<div class="col-xs-12">
-								<div class="form-group">
-									<label for="label-color font_18 lb-tlf">Ciudad</label>
-									<input type="text" class="form-control form-29" name="ciu" id="ciu" style="color: #555 !important;">
-								 </div>
-							</div>
+							</div>							
 						</div>
 
 						<center>
-							<button class="btn btn-primary btn-login" type="submit" name="bte" id="bte">Guardar</button>
+							<button class="btn btn-primary btn-login btnpas" type="submit" name="bte" id="bte">Cambiar</button>
 						</center>
 					</div>
 				</form>
@@ -185,24 +152,76 @@
 	</script>
 	<script type="text/javascript" src="js/control/control.js"></script>
 	<script>
+		window.onload = function(){
+			datosPerfil();
+		}
 		$(function(){
 			$('#formEdit').submit(function(e){
 				e.preventDefault();
 				var data = $('#formEdit').serialize();
-				editarDatos(data);
+				cambiarPass(data);
 			})
-
-			$('#formImg').submit(function(e){
-				e.preventDefault();
-				var data = new FormData(document.getElementById("formImg"));
-				cambiarImg(data);
+			$('#act_pas').on('blur',function(){
+				var data = {};
+				data.usu = getCookie('corr_usu');
+				data.pas = $('#act_pas').val();
+				$.ajax({
+					url:SERVERNODE+'/usuario/login',
+					type:'POST',
+					data:data,
+					success:function(d){
+						if(d.r==true){
+							$(".btnpas").removeAttr('disabled');
+				  			$(".help_act").hide(200);
+						}else{
+							$(".btnpas").attr('disabled','true');
+				  			$(".help_act").show(200);
+						}
+					}
+				});
 			})
-		})
-		window.onload = function(){
-			datosPerfil();
-			obtenerDatos();
-			obtnerPaises();
-		}
+			$('#rep_pas').on('keyup',function(){
+				var nue = $("#new_pas").val();
+				var rep = $("#rep_pas").val();
+				if(nue!=rep){
+				  $(".btnpas").attr('disabled','true');
+				  $(".help_pass").show(200);
+				}else{
+				  $(".help_pass").hide(200);
+				  $(".btnpas").removeAttr('disabled');
+				}
+			})
+		})		
+		function mostrarPass(n){
+		    switch(n){
+		      case 1:
+		      if($(".eye_"+n+"").hasClass("fa-eye")){
+		        $(".eye_"+n+"").removeClass("fa-eye");
+		        $(".eye_"+n+"").addClass("fa-eye-slash");
+		        $("#act_pas").removeAttr("type");
+		        $("#act_pas").attr("type","text");
+		      }else{
+		        $(".eye_"+n+"").removeClass("fa-eye-slash");
+		        $(".eye_"+n+"").addClass("fa-eye");
+		        $("#act_pas").removeAttr("type");
+		        $("#act_pas").attr("type","password");
+		      }
+		      break;
+		      case 2:
+		        if($(".eye_"+n+"").hasClass("fa-eye")){
+		          $(".eye_"+n+"").removeClass("fa-eye");
+		          $(".eye_"+n+"").addClass("fa-eye-slash");
+		          $("#new_pas").removeAttr("type");
+		          $("#new_pas").attr("type","text");
+		        }else{
+		          $(".eye_"+n+"").removeClass("fa-eye-slash");
+		          $(".eye_"+n+"").addClass("fa-eye");
+		          $("#new_pas").removeAttr("type");
+		          $("#new_pas").attr("type","password");
+		        }
+		      break;
+		    }
+		  }
 	</script>
   </body>
 </html>
