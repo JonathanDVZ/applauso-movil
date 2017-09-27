@@ -13,7 +13,6 @@
 		<link rel="stylesheet" href="css/material-icons.css">
 		<link rel="stylesheet" href="css/material-kit.css">
 		<link rel="stylesheet" href="css/estilos-generales_sass.css">
-		<!-- <link rel="stylesheet" href="css/cuenta.css"> -->
 		<link rel="stylesheet" href="css/29formu.css">
 		<title>APPLAUSO</title>
 	</head>
@@ -51,7 +50,7 @@
 
 		<div class="row nomargin con_perfil">
 			<div class="contenedor">
-				<form  method="POST" action="">
+				<form id="formTar" method="" action="">
 					<div class="content">
 						<div class="row">
 							<div class="col-xs-12 text-center">
@@ -62,7 +61,7 @@
 							</div>
 							<div class="form-group">
 								<div class="col-xs-10" style="padding-left: 0; padding-right: 0;">
-									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 nro_tar" id="lb-numbertarjeta" placeholder="XXXX XXXX XXXX XXXX" required>
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 nro_tar" name="num" id="num" placeholder="XXXX XXXX XXXX XXXX" required minlength="16">
 								</div>
 							</div>
 						</div>
@@ -70,14 +69,14 @@
 							<div class="col-xs-6">
 								<div class="form-group">
 									<label for="label-color font_18 lb-expedicion">Expiración:</label>
-									<input type="text" class="form-control form-29 exp" id="lb-expedicion" placeholder="MM/AA" style="color: #0CADA5 !important;">
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 exp" name="ven" id="ven" placeholder="MM/AA" required minlength="5">
 								</div>
 							</div>
 
 							<div class="col-xs-6">
 								<div class="form-group">
 									<label for="label-color font_18 lb-cvv">CVV:</label>
-									<input type="text" class="form-control form-29 cvv" id="lb-cvv" placeholder="CVV" style="color: #0CADA5 !important;">
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 cvv" name="cvv" id="cvv" placeholder="CVV" required minlength="3">
 								</div>
 							</div>
 						</div>
@@ -85,7 +84,19 @@
 							<div class="col-xs-12">
 								<div class="form-group">
 									<label for="label-color font_18 lb-nombre">Nombre:</label>
-									<input type="text" class="form-control form-29" id="lb-nombre" placeholder="Nombre" required style="color: #0CADA5 !important;">
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29" name="nom" id="nom" placeholder="Nombre" required>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="label-color font_18 lb-nombre">Tipo:</label>
+									<select class="form-control form-29" name="tip" id="tip" required>
+										<option value="">-</option>
+										<option value="C">Credito</option>
+										<option value="D">Debito</option>
+									</select>									
 								</div>
 							</div>
 						</div>
@@ -127,22 +138,18 @@
 			</div>
 		</footer>
 
-
-		<!--JAVASCRIPTs-->
-		<script type="text/javascript" src="js/jquery.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-		<script type="text/javascript" src="js/material-kit.js"></script>
-		<script type="text/javascript" src="js/material.min.js"></script>
-		<script type="text/javascript" src="js/nouislider.min.js"></script>
-	
-
+	<!--JAVASCRIPTs-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
+	<script type="text/javascript" src="js/material-kit.js"></script>
+	<script type="text/javascript" src="js/material.min.js"></script>
+	<script type="text/javascript" src="js/nouislider.min.js"></script>	
 	<!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
 	<div class="app" id="deviceready">
       <div style="display:none;" class="event listening"></div>
       <div style="display:none;" class="event received"></div>
     </div>
-
 	<script type="text/javascript" src="cordova.js"></script>
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript" src="js/jquery.payform.js"></script>
@@ -154,13 +161,25 @@
 	<script>
 		window.onload = function(){
 			datosPerfil();
-			mes_ex();
-			ano_ex()
 		}
 		$('.nro_tar').payform('formatCardNumber');
 		$('.exp').payform('formatCardExpiry');
 		$('.cvv').payform('formatCardCVC');
-		// $('#numeric').payform('formatNumeric');		
+		$(function(){
+			$('.nro_tar').on('blur',function(){
+				$('.nro_tar').removeAttr('type','text');
+				$('.nro_tar').attr('type','password');
+			});
+			$('.nro_tar').on('focus',function(){
+				$('.nro_tar').removeAttr('type','password');
+				$('.nro_tar').attr('type','text');
+			});
+			$('#formTar').submit(function(e){
+				e.preventDefault();
+				var datos = $('#formTar').serialize();
+				aggTarjeta(datos);
+			});
+		})
 	</script>
   </body>
 </html>

@@ -50,8 +50,9 @@
 
 		<ul class="list-group">
 			<li class="list-group-item disabled">Metodo de pago</li>
-			<li class="list-group-item"><img src="img/Recursos-63.png">**** 9424</li>
-			<li class="list-group-item"><img src="img/Recursos-63.png">**** 1234</li>
+			<div class="lista_tarjetas">
+				<!-- LISTADO DE TARJETAS -->
+			</div>
 			<li class="list-group-item"><a href="aggTarjeta.html"><i class="fa fa-plus" aria-hidden="true"></i>Añadir tarjeta</a></li>
 			<li class="list-group-item"><i class="fa fa-plus" aria-hidden="true"></i>Añadir credito</li>
 
@@ -96,7 +97,6 @@
 	<script type="text/javascript" src="js/material-kit.js"></script>
 	<script type="text/javascript" src="js/material.min.js"></script>
 	<script type="text/javascript" src="js/nouislider.min.js"></script>
-	
 
 	<!-- HTML Y js NECESARIOS PARA LA FUNCINALIDAD CON CORDOVA --> 
 	<div class="app" id="deviceready">
@@ -114,6 +114,7 @@
 	<script>
 		window.onload = function(){
 			datosPerfil();
+			obtenerTarjetas();
 		}
 	</script>
   </body>
