@@ -424,7 +424,7 @@ a:hover{
     margin: auto;
     background: #0E6565;
     padding: .5em;
-    z-index: 50;
+    z-index: 9999;
 }
 
 .fondo_gris{
