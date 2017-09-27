@@ -79,7 +79,7 @@ function obtenerTarjetas(){
 					var nro = d.data[i].nume_tar;
 					 var n = nro.split(' ');
 					html+='<li class="list-group-item">';
-						html+='<a href="aggTarjeta.html?cod_tar='+d.data[i].code_tar+'" style="color:#333;">';
+						html+='<a href="aggTarjeta.html?code_tar='+d.data[i].code_tar+'" style="color:#333;">';
 							html+='<img src="img/Recursos-63.png">';
 							html+='<span class="fa fa-asterisk"></span>';
 							html+='<span class="fa fa-asterisk"></span>';
@@ -93,7 +93,7 @@ function obtenerTarjetas(){
 				$('.lista_tarjetas').append(html);
 			}else{
 				html+='<li class="list-group-item">';
-					html+='<b>Aun no Agregas una Tarjeta</b>';
+					html+='<b>Aun no Añades una Tarjeta</b>';
 				html+='</li>';
 				$('.lista_tarjetas').append(html);
 			}
@@ -122,4 +122,50 @@ function eleTarjeta(cod_tar){
 			}
 		});
 	}
+}
+
+function obTarjeta(code_tar){
+	$.ajax({
+		url:SERVERNODE+'/usuario/obtener-tarjeta?code_tar='+code_tar,
+		type:'GET',
+		crossDomain:true,
+		cache:false,
+		success:function(d){
+			console.log(d);
+			$('#cod').val(d.data[0].code_tar);
+			$('#num').val(d.data[0].nume_tar);
+			$('#ven').val(d.data[0].venc_tar);
+			$('#cvv').val(d.data[0].cvv_tar);
+			$('#nom').val(d.data[0].nomb_tar);
+			
+			if(d.data[0].tipo_tar=='C'){
+				$('#tipC').attr('selected','true');
+				$('#tipD').removeAttr('selected');
+			}else{
+				$('#tipD').attr('selected','true');
+				$('#tipC').removeAttr('selected');
+			}
+		}
+	})
+}
+
+function editTarjeta(datos){
+	modal_wait('Procesando...',1,1);
+	$.ajax({
+		url:SERVERNODE+'/usuario/editar_tarjeta',
+		type:'POST',
+		data:datos,
+		crossDomain:true,
+		cache:false,
+		success:function(d){
+			modal_wait('',0,0);
+			console.log(d);
+			if(d.r==true){
+				// modal_alert('Registro Editado',1);
+				$('#formTar')[0].reset();
+			}else{
+				modal_alert(d.msj,1);
+			}
+		}
+	});
 }

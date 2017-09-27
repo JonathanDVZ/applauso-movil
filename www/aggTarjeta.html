@@ -33,7 +33,7 @@
 			</div>
 		</div>
 
-		<div class="titulo_c"><h4>Agregar tarjeta</h4></div>
+		<div class="titulo_c"><h4>Añadir Tarjeta</h4></div>
 			
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
@@ -51,6 +51,7 @@
 		<div class="row nomargin con_perfil">
 			<div class="contenedor">
 				<form id="formTar" method="" action="">
+					<input type="hidden" name="cod" id="cod">
 					<div class="content">
 						<div class="row">
 							<div class="col-xs-12 text-center">
@@ -69,7 +70,7 @@
 							<div class="col-xs-6">
 								<div class="form-group">
 									<label for="label-color font_18 lb-expedicion">Expiración:</label>
-									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 exp" name="ven" id="ven" placeholder="MM/AA" required minlength="5">
+									<input type="text" style="color: #0CADA5 !important;" class="form-control form-29 exp" name="ven" id="ven" placeholder="MM / AA" required minlength="5">
 								</div>
 							</div>
 
@@ -94,15 +95,15 @@
 									<label for="label-color font_18 lb-nombre">Tipo:</label>
 									<select class="form-control form-29" name="tip" id="tip" required>
 										<option value="">-</option>
-										<option value="C">Credito</option>
-										<option value="D">Debito</option>
+										<option id="tipC" value="C">Credito</option>
+										<option id="tipD" value="D">Debito</option>
 									</select>									
 								</div>
 							</div>
 						</div>
 
 						<center>
-							<button class="btn btn-primary btn-login" type="submit" name="bte" id="bte">Guardar</button>
+							<button class="btn btn-primary btn-login" type="submit" name="bte" id="bte">Agregar</button>
 						</center>
 					</div>
 				</form>
@@ -159,12 +160,34 @@
 	</script>
 	<script type="text/javascript" src="js/control/control.js"></script>
 	<script>
-		window.onload = function(){
-			datosPerfil();
-		}
 		$('.nro_tar').payform('formatCardNumber');
 		$('.exp').payform('formatCardExpiry');
 		$('.cvv').payform('formatCardCVC');
+
+		window.onload = function(){
+			datosPerfil();
+			var url = window.location.search;
+			if(url!=''){
+				var path = url.split('=');
+				var code_tar = path[1];
+				obTarjeta(code_tar);
+				$('#bte').text('');
+				$('#bte').text('Guardar');
+
+				$('#formTar').submit(function(e){
+					e.preventDefault();
+					var datos = $('#formTar').serialize();
+					editTarjeta(datos);
+				});
+			}else{
+				$('#formTar').submit(function(e){
+					e.preventDefault();
+					var datos = $('#formTar').serialize();
+					aggTarjeta(datos);
+				});
+			}
+		}
+		
 		$(function(){
 			$('.nro_tar').on('blur',function(){
 				$('.nro_tar').removeAttr('type','text');
@@ -174,12 +197,7 @@
 				$('.nro_tar').removeAttr('type','password');
 				$('.nro_tar').attr('type','text');
 			});
-			$('#formTar').submit(function(e){
-				e.preventDefault();
-				var datos = $('#formTar').serialize();
-				aggTarjeta(datos);
-			});
-		})
+		});
 	</script>
   </body>
 </html>
