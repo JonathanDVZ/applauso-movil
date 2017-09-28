@@ -18,6 +18,112 @@
 	</head>
 
 
+<style type="text/css">
+
+	.cont-listas {
+		width: 100%;
+		display: flex;
+		aling-items:center;
+		padding-left: 20px;		
+		padding-right: 0;
+		border-bottom: 1px solid #0CADA5;
+
+	}
+
+	.nomb-2 {
+		border-bottom: 1px solid #0CADA5;
+		margin-bottom: 10px;
+	}
+
+	.cont-listas img{
+		height: 36px;
+		width: 36px;
+		margin-top: 4px;
+		margin-right: 5px;		
+	}
+
+	.cambiar-contrase {
+		font-size: 12px;
+		padding: 30px 0 120px 27px;
+
+	}
+	.cambiar-contrase h4 {
+		margin: 0;
+	}
+
+
+
+
+	.con_perfil {
+    	padding-bottom: 0px;
+	}
+	.con_perfil h4{
+		margin: 0;
+		margin-bottom: 7px;
+
+	}
+
+
+
+	@media (min-width: 320px) and (max-width: 374px){
+    	.editar{
+		position: absolute;
+		bottom: 1px;
+		left: 15px;
+	}
+
+	.imgs{
+        position: relative;
+        
+
+	}
+}
+
+
+	@media (min-width: 375px) and (max-width: 400px){
+	.editar{
+		position: absolute;
+		bottom: 4px;
+		left: 15px;
+	}
+
+	.imgs{
+        position: relative;
+        
+
+	}
+}
+
+	@media (min-width: 401px) and (max-width: 450px){
+	.editar{
+		position: absolute;
+		bottom: 4px;
+		left: 25px;
+	}
+
+	.imgs{
+        position: relative;
+        
+
+	}
+}
+
+
+.h4mascota{
+	margin: 0;
+	padding-top: 15px;
+	padding-left: 25px;
+}
+
+.h4familia{
+	margin: 0;
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+}
+
+</style>
+
 	<body class="fondo_blanco">
 		<div class="cabecera">
 			<div class="row nomargin">
@@ -46,19 +152,24 @@
 				</div>
 			</div>
 		</div>
-		<div class="titulo_c"><h4>Configuración</h4></div>
+		<div class="titulo_c"><h4>Editar Perfil</h4></div>
 			
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
 				<div class="col-xs-5 npadding">
-					<img src="img/recursos etapa 1-27.png" width="100%">
+					<div class="imags">
+					<img src="img/recursos etapa 1-27.png" width="90%">
+					<div class="editar">
+					<img src="imgs/Sin título-1-18.png" width="30px;">
+					</div>
+					</div>
 					<!--<img id="img_usu" src="" width="100%">-->
 				</div>
-				<div class="col-xs-7 descri">
+<!-- 				<div class="col-xs-7 descri">
 					<h4 id="nomape_usu">Andres Cano</h4>
 					<h5 id="sald_usu">$ 0,00</h5>
 					<p><span id="appl_usu">200$</span> <img src="img/applausos.png" width="17%"></p>
-				</div>
+				</div> -->
 			</div>
 		</div>
 
@@ -67,11 +178,11 @@
 				<br>				
 				<div class="col-xs-12 cont_perfil">
 					<p>Nombres</p>
-					<h4 id="nom_usu"></h4>
+					<h4 id="nom_usu">Andres</h4>
 				</div>
 				<div class="col-xs-12 cont_perfil">
 					<p>Apellidos</p>
-					<h4 id="ape_usu"></h4>
+					<h4 id="ape_usu">Cano</h4>
 				</div>
 				<div class="col-xs-12 cont_perfil">
 					<p>Fecha de nacimiento</p>
@@ -92,14 +203,47 @@
 				<div class="col-xs-12 cont_perfil">
 					<h4><a style="color:#333;" href="editar.html">Editar perfil</a></h4>
 				</div>
-				<div class="col-xs-12 cont_perfil">
-					<h4><a style="color:#333;" href="editarContra.html">Cambiar contraseña</a></h4>
+			</div>
+		</div>
+
+
+		<div class="row nomargin">
+					<div class="col-xs-12 cont-listas">
+						<h4 class="h4familia"><a style="color:#333; font-size:13px !important;" href="editar.html">Familia</a></h4>
+					</div>
+					<div class="col-xs-12 cont-listas">
+						<img src="imgs/Sin título-1-19.png">
+						<h4><a style="color:#333;" href="editar.html">Nombre</a></h4>
+					</div>
+					<div class="col-xs-12 cont-listas">
+						<img src="imgs/Sin título-1-19.png">
+						<h4><a style="color:#333;" href="editar.html">Correo</a></h4>
+					</div>	
+					<div class="col-xs-12 cont-listas">
+						<h4 class="h4mascota"><a style="color:#333; font-size:13px !important;" href="editar.html">Mascota</a></h4>
+					</div>
+					<div class="col-xs-12 cont-listas nomb-2">
+						<img src="imgs/Sin título-1-19.png">
+						<h4><a style="color:#333;" href="editar.html">Nombre</a></h4>
+					</div>	
+
+		</div>
+
+		<div class="row nomargin">
+			<div class="cambiar-contrase">
+				<div class="col-xs-12">
+					<h4><a style="color:#bd0d0d;" href="editarContra.html">Cambiar contraseña</a></h4>
 				</div>
-				<div class="col-xs-12 cont_perfil">
-					<h4><a style="color:red;">Eliminar cuenta</a></h4>
+				<div class="col-xs-12">
+					<h4><a style="color:black;">Eliminar cuenta</a></h4>
 				</div>
 			</div>
 		</div>
+
+
+
+
+		<br><br>
 		<br><br>
 		<footer class="menu-footer">
 			<div class="row">

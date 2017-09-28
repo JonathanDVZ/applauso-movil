@@ -496,6 +496,9 @@ a:hover{
     padding-left: 0em;
     padding-right:0em;
 }
+.padd_right{
+    padding-right:0em !important;
+}
 .azul{
     color: #0ACADA;
 }
