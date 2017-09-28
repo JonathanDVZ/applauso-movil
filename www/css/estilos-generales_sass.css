@@ -848,8 +848,7 @@ input[type="time"] {
     font-size: 1.2em; } }
 
 .body-opc {
-  overflow-x: hidden;
-  overflow-y: auto; }
+  overflow: hidden !important; }
 
 .caja-opc_parati {
   margin-bottom: 70px; }
@@ -887,10 +886,92 @@ input[type="time"] {
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
     width: 100%;
     height: 85%; }
+
+@media screen and (max-width: 801px) {
+  .caja-opc_comunidad {
+    height: 22vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 21.5vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 769px) {
+  .caja-opc_comunidad {
+    height: 21.5vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 21vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 601px) {
+  .caja-opc_comunidad {
+    height: 21.5vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 21vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 481px) {
+  .caja-opc_comunidad {
+    height: 21.5vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 21vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 413px) {
+  .caja-opc_comunidad {
+    height: 21.5vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 20.5vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 376px) {
+  .caja-opc_comunidad {
+    height: 21vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 20vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 70% !important;
+    height: 65% !important; } }
+
+@media screen and (max-width: 361px) {
+  .caja-opc_comunidad {
+    height: 21vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 20vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 65% !important;
+    height: 60% !important; } }
+
+@media screen and (max-width: 321px) {
+  .caja-opc_comunidad {
+    height: 19vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 19vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 60% !important;
+    height: 55% !important; } }
+
+@media (max-width: 321px) and (max-height: 569px) {
+  .caja-opc_comunidad {
+    height: 20vh !important; }
+  .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
+    height: 20vh !important; }
+  .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
+    width: 60% !important;
+    height: 55% !important; } }
 
 .body-carga {
   background: #fff; }
@@ -978,7 +1059,7 @@ input[type="time"] {
   width: 100%;
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: -0.2em;
   margin: auto;
   background: var(--azul);
   text-align: center;
