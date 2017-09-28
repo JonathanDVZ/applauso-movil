@@ -935,13 +935,13 @@ input[type="time"] {
     height: 20.5vh !important; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
     width: 70% !important;
-    height: 65% !important; } }
+    height: 75% !important; } }
 
 @media screen and (max-width: 376px) {
   .caja-opc_comunidad {
     height: 21vh !important; }
   .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
-    height: 20vh !important; }
+    height: 20.5vh !important; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
     width: 70% !important;
     height: 65% !important; } }
@@ -952,8 +952,8 @@ input[type="time"] {
   .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
     height: 20vh !important; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
-    width: 65% !important;
-    height: 60% !important; } }
+    width: 70% !important;
+    height: 75% !important; } }
 
 @media screen and (max-width: 321px) {
   .caja-opc_comunidad {
@@ -962,16 +962,16 @@ input[type="time"] {
     height: 19vh !important; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
     width: 60% !important;
-    height: 55% !important; } }
+    height: 70% !important; } }
 
 @media (max-width: 321px) and (max-height: 569px) {
   .caja-opc_comunidad {
-    height: 20vh !important; }
+    height: 19vh !important; }
   .caja-opc_evento, .caja-opc_comida, .caja-opc_aliados, .caja-opc_misaplausos, .caja-opc_retos, .caja-opc_parati {
     height: 20vh !important; }
   .caja-opc_comunidad img, .caja-opc_evento img, .caja-opc_comida img, .caja-opc_aliados img, .caja-opc_misaplausos img, .caja-opc_retos img, .caja-opc_parati img {
     width: 60% !important;
-    height: 55% !important; } }
+    height: 65% !important; } }
 
 .body-carga {
   background: #fff; }
