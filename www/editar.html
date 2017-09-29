@@ -39,7 +39,7 @@
 		<div class="cabecera_perfil row nomargin">
 			<div class="container">
 				<div class="col-xs-5 npadding">
-					<img onclick="document.getElementById('img').click();" id="img_usu" src="" width="100%">
+					<img class="img-circle" onclick="document.getElementById('img').click();" id="img_usu" src="" width="100%">
 					<div onclick="document.getElementById('img').click();" class="text-center" style="color: #fff;font-weight: bold;">
 						<small>Cambiar Imagen</small>
 					</div>
@@ -52,8 +52,7 @@
 			</div>
 		</div>
 		<form style="display:none;" id="formImg" name="formImg" action="" method="" enctype="multipart/form-data">
-			<input id="img" onchange="document.getElementById('btImg').click();" name="img"  type="file" accept="image/*" style="display:none;">
-			<input type="submit" id="btImg">
+			<input id="img" name="img" onchange="cambiarImg()" type="file" accept="image/*">
 		</form>
 		<div class="row nomargin con_perfil">
 			<div class="contenedor">
@@ -186,6 +185,9 @@
 	<script type="text/javascript" src="js/control/control.js"></script>
 	<script>
 		$(function(){
+			$('#img').on('change',function(){
+				$('#btImg').click();
+			});
 			$('#formEdit').submit(function(e){
 				e.preventDefault();
 				var data = $('#formEdit').serialize();
@@ -195,14 +197,16 @@
 			$('#formImg').submit(function(e){
 				e.preventDefault();
 				var data = new FormData(document.getElementById("formImg"));
-				cambiarImg(data);
+				data.append("img", '');
+				console.log(data);
+				// cambiarImg(data);
 			})
 		})
 		window.onload = function(){
 			datosPerfil();
 			obtenerDatos();
 			obtnerPaises();
-		}
+		}		
 	</script>
   </body>
 </html>
