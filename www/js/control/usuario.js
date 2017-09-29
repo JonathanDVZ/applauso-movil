@@ -40,8 +40,38 @@ function cambiarPass(data){
 	})
 }
 
-function cambiarImg(data){
-	console.log(data);	
+function cambiarImg(){
+  	var valor =document.formImg.img;
+	if( valor.value == null || valor.value.length == 0 || /^\s+$/.test(valor.value)){			
+	}else{
+		var formData = new FormData(document.getElementById("formImg"));
+		formData.append("id", getCookie('id_usuario'));				
+		modal_wait('Actualizando...',1,1);
+		$.ajax({
+			url:''+SERVERNODE+'/usuario/subir-imagen',
+			type:'POST',
+			dataType: "html",
+			data:formData,
+			cache: false,
+	        contentType: false,
+		    processData: false,
+		    error: function(xhr){
+				modal_wait('',0,0);
+	            console.log('Error: ' + xhr.status);
+        	},
+			success:function(d){
+				var j = JSON.parse(d);
+				modal_wait('',0,0);
+				if(j.r==true){
+					datosPerfil();
+					setCookie('imag_usu','',-1);
+					setCookie('imag_usu',j.img,1);
+				}else{
+					modal_alert(j.msj,1);
+				}
+			}
+		});
+	}
 }
 
 function aggTarjeta(datos){

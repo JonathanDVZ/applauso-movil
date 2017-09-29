@@ -9,7 +9,7 @@ window.onload = function(){
 	if(getCookie('id_usuario')!="" && validar_sesion=="true" && getCookie('id_usuario')!=null && getCookie('id_usuario')!="null")
 	{}else{
 		if(validar_sesion=="true" || validar_sesion==null) 
-		//salir();
+		salir();
 	}
 }
 
