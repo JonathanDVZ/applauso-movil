@@ -1040,7 +1040,11 @@ input[type="time"] {
   left: 1.5em;
   margin: auto; }
   .barra-home_menu .icono-menu {
-    text-shadow: 1px  1px #fff, -1px -1px #fff, 2px  2px #fff, -2px -2px #fff, 0   -3px #fff;
+    text-shadow: 1px  1px #fff,
+ -1px -1px #fff,
+ 2px  2px #fff,
+ -2px -2px #fff,
+ 0   -3px #fff;
     font-size: 3.6em;
     color: var(--Mdark-verde); }
 
@@ -1405,7 +1409,7 @@ ul.reset {
 .caja-opc_eventos {
   width: 100%; }
   .caja-opc_eventos img {
-    margin-left: -1em;
+    margin-left: -1.1em;
     width: 100vw; }
 
 .caja-opc .icon-concierto,
